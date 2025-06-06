@@ -1,0 +1,98 @@
+[
+    {
+        "question": "Show me domesticated cats",
+        "reasoning_style": "Chain of Thought",
+        "thought": "I need to find items that are instances (P31) of domestic cat (Q146). Then I\u2019ll include the label service so the results are readable.",
+        "sparql": "SELECT ?item ?itemLabel WHERE {\n  ?item wdt:P31 wd:Q146.\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"[AUTO_LANGUAGE],mul,en\". }\n}"
+    },
+    {
+        "question": "How many humans are in Wikidata?",
+        "reasoning_style": "Chain of Thought",
+        "thought": "I need to count how many items are instances (P31) of human (Q5). To do that, I\u2019ll use COUNT(*) in the SELECT clause.",
+        "sparql": "SELECT (COUNT(*) AS ?count) WHERE {\n  ?item wdt:P31 wd:Q5.\n}"
+    },
+    {
+        "question": "Show me recent events",
+        "reasoning_style": "Chain of Thought",
+        "thought": "I need to find items that are instances (P31) or subclasses (P279*) of event (Q1190554). To ensure they are recent, I\u2019ll look for a point in time (P585) or a start date (P580), making sure at least one exists using BOUND(). Then, I\u2019ll filter for dates within the last 31 days using NOW() and time subtraction. To make the results distinct and clean, I\u2019ll use a subquery with SELECT DISTINCT.",
+        "sparql": "SELECT ?event ?eventLabel ?date\nWITH {\n  SELECT DISTINCT ?event ?date\n  WHERE {\n    ?event wdt:P31/wdt:P279* wd:Q1190554.\n    OPTIONAL { ?event wdt:P585 ?date. }\n    OPTIONAL { ?event wdt:P580 ?date. }\n    FILTER(BOUND(?date) && DATATYPE(?date) = xsd:dateTime).\n    BIND(NOW() - ?date AS ?distance).\n    FILTER(0 <= ?distance && ?distance < 31).\n  }\n  LIMIT 150\n} AS %i\nWHERE {\n  INCLUDE %i\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"[AUTO_LANGUAGE],mul,en\". }\n}"
+    },
+    {
+        "question": "What are some lexemes that match an expression in English?",
+        "reasoning_style": "Chain of Thought",
+        "thought": "I want to find lexemes where the language is English (Q1860), and their lemma matches a specific regular expression. I\u2019ll use dct:language to specify English, and wikibase:lemma to access the lemma string. I\u2019ll filter lemmas starting with 'pota' using a regex filter.",
+        "sparql": "SELECT ?lexemeId ?lemma WHERE {\n  ?lexemeId dct:language wd:Q1860;\n            wikibase:lemma ?lemma.\n  FILTER (regex(?lemma, '^pota.*'))\n}"
+    },
+    {
+        "question": "What are some properties I can use to link some properties to a standard?",
+        "reasoning_style": "Chain of Thought",
+        "thought": "I need to find properties that are used to link items to a technical standard (Q317623). I will look for triples where some ?item is linked to a ?standard using an unknown property (?propertyRel), and the standard must be an instance of a technical standard (P31 = Q317623). Then, I\u2019ll retrieve the property item using wikibase:directClaim to get readable property labels. I\u2019ll use SELECT DISTINCT to avoid duplicate entries.",
+        "sparql": "SELECT DISTINCT ?propertyRel ?propertyItem ?propertyItemLabel WHERE {\n  ?item ?propertyRel ?standard.\n  ?standard wdt:P31 wd:Q317623.\n  ?propertyItem wikibase:directClaim ?propertyRel.\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"[AUTO_LANGUAGE],mul,en\". }\n}"
+    },
+    {
+        "question": "What are the largest cities of every country?",
+        "reasoning_style": "Chain of Thought",
+        "thought": "I want to find the largest city (by population) for each country. First, I identify cities using P31/P279* with Q515 (city), ensure they have population data (P1082), and are linked to a country (P17). In a subquery, I group by country and select the maximum population per country. Then, I match the population and country to get the actual city, including its location (P625) and readable labels. The outer query ensures only the top city per country is returned.",
+        "sparql": "SELECT DISTINCT ?city ?cityLabel ?population ?country ?countryLabel ?loc WHERE {\n  {\n    SELECT (MAX(?population_) AS ?population) ?country WHERE {\n      ?city wdt:P31/wdt:P279* wd:Q515 .\n      ?city wdt:P1082 ?population_ .\n      ?city wdt:P17 ?country .\n    }\n    GROUP BY ?country\n    ORDER BY DESC(?population)\n  }\n  ?city wdt:P31/wdt:P279* wd:Q515 .\n  ?city wdt:P1082 ?population .\n  ?city wdt:P17 ?country .\n  ?city wdt:P625 ?loc .\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language \"[AUTO_LANGUAGE],mul,en\" .\n  }\n}\nORDER BY DESC(?population)"
+    },
+    {
+        "question": "Show me movies with Bud Spencer.",
+        "reasoning_style": "Chain of Thought",
+        "thought": "Bud Spencer is an actor represented by item Q221074. To find movies he acted in, I look for items where he is listed as a cast member using property P161. I also retrieve the film\u2019s release date (P577), and optionally its image (P18). To get a clean output, I use GROUP BY and MIN to show the earliest release date per movie.",
+        "sparql": "SELECT ?item ?itemLabel (MIN(?date) AS ?firstReleased) ?_image\nWHERE {\n  ?item wdt:P161 wd:Q221074;\n        wdt:P577 ?date.\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"[AUTO_LANGUAGE],mul,en\". }\n  OPTIONAL { ?item wdt:P18 ?_image. }\n}\nGROUP BY ?item ?itemLabel ?_image\nORDER BY (?date)"
+    },
+    {
+        "question": "What is the number of dead people by month after the year 2000?",
+        "reasoning_style": "Chain of Thought",
+        "thought": "I want to count the number of humans (P31 = Q5) who died after the year 2000. For this, I\u2019ll use the date of death property (P570), but since it can have different time precisions, I\u2019ll extract the exact time value (wikibase:timeValue) and make sure the precision is at least monthly (wikibase:timePrecision \u2265 10). Then, I\u2019ll group results by year and month using BIND and CONCAT, and count the number of people per group.",
+        "sparql": "SELECT ?yearmonth (COUNT(?person) as ?count)\nWHERE {\n  ?person wdt:P31 wd:Q5;\n          p:P570/psv:P570 [\n                wikibase:timePrecision ?precision ;\n                wikibase:timeValue ?date ;\n              ] .\n  BIND(CONCAT(STR(YEAR(?date)),\"-\",STR(MONTH(?date))) as ?yearmonth).\n  FILTER( ?date >= \"2000-01-01T00:00:00\"^^xsd:dateTime )\n  FILTER( ?precision >= \"10\"^^xsd:integer )\n}\nGROUP BY ?yearmonth"
+    },
+    {
+        "question": "Show me female artists",
+        "reasoning_style": "Chain of Thought",
+        "thought": "I want to find humans (P31 = Q5) who are female (P21 = Q6581072). Then, I\u2019ll filter for those whose occupation (P106) is artist or a subclass of artist (Q483501) using P279*. To make the results readable, I\u2019ll include optional English labels and descriptions. I'll use SELECT DISTINCT to avoid duplicate entries and limit the result to 500.",
+        "sparql": "SELECT DISTINCT ?women ?women_label ?women_description\nWHERE {\n  ?women wdt:P31 wd:Q5 .\n  ?women wdt:P21 wd:Q6581072 .\n  ?women wdt:P106/wdt:P279* wd:Q483501 .\n  OPTIONAL {?women rdfs:label ?women_label FILTER (LANG(?women_label) = \"en\")}.\n  OPTIONAL {?women schema:description ?women_description FILTER (LANG(?women_description) = \"en\")}.\n}\nLIMIT 500"
+    },
+    {
+        "question": "Who are the scientists born in Germany after 1950?",
+        "reasoning_style": "Self-Ask",
+        "thought": "Subquestion 1: What is the QID for scientist? \u2192 Q901\nSubquestion 2: What is the QID for Germany? \u2192 Q183\nSubquestion 3: What property is used for birth date? \u2192 P569\nFinal Thought: I need to find humans (P31 = Q5), whose occupation (P106) is scientist (Q901), born after 1950, and with citizenship (P27) = Germany (Q183).",
+        "sparql": "SELECT ?person ?personLabel WHERE {\n  ?person wdt:P31 wd:Q5;\n          wdt:P106 wd:Q901;\n          wdt:P27 wd:Q183;\n          wdt:P569 ?birthDate.\n  FILTER(YEAR(?birthDate) > 1950)\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"[AUTO_LANGUAGE],mul,en\". }\n}"
+    },
+    {
+        "question": "Which countries are not in the European Union?",
+        "reasoning_style": "Self-Ask",
+        "thought": "Subquestion 1: What is the QID for the European Union? \u2192 Q458\nSubquestion 2: What property links countries to organizations they are members of? \u2192 P463\nFinal Thought: I will get all countries (P31=Q6256) and filter those not having P463=Q458 using FILTER NOT EXISTS.",
+        "sparql": "SELECT ?country ?countryLabel WHERE {\n  ?country wdt:P31 wd:Q6256.\n  FILTER NOT EXISTS { ?country wdt:P463 wd:Q458 }\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"[AUTO_LANGUAGE],mul,en\". }\n}"
+    },
+    {
+        "question": "How many films has Christopher Nolan directed?",
+        "reasoning_style": "Self-Ask",
+        "thought": "Subquestion 1: What is the QID for Christopher Nolan? \u2192 Q25191\nSubquestion 2: What property indicates the director of a film? \u2192 P57\nFinal Thought: I will count all films where Christopher Nolan (Q25191) is listed as the director.",
+        "sparql": "SELECT (COUNT(?film) AS ?count) WHERE {\n  ?film wdt:P57 wd:Q25191.\n}"
+    },
+    {
+        "question": "Show me pictures of cats limit to 30",
+        "reasoning_style": "Chain of Thought",
+        "thought": "ReasoningStyle: Chain of Thought\n I need to find items that are instances (P31) of domestic cat (Q146).  Then I'll find images associated with those items using P18. I'll limit the results to 30 using LIMIT.",
+        "sparql": "```sparql\nSELECT ?item ?itemLabel ?image WHERE {\n  ?item wdt:P31 wd:Q146.\n  ?item wdt:P18 ?image.\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"[AUTO_LANGUAGE],mul,en\". }\n}\nLIMIT 30\n```"
+    },
+    {
+        "question": "Which US presidents started their term after 2000?",
+        "reasoning_style": "Chain of Thought",
+        "thought": "I need to find people who held the position of US President (Q11696) using P39. To access the start date qualifier (P580), I use the p:P39 path to get the full statement, then use pq:P580. I bind the subject (the president) via the triple ?president p:P39 ?statement.",
+        "sparql": "SELECT ?president ?presidentLabel ?termStart WHERE {\n  ?president p:P39 ?statement .\n  ?statement ps:P39 wd:Q11696;\n             pq:P580 ?termStart .\n  FILTER(YEAR(?termStart) > 2000)\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"[AUTO_LANGUAGE],en\". }\n}"
+    },
+    {
+        "question": "women physicist from america limit to 20",
+        "reasoning_style": "Chain of Thought",
+        "thought": "ReasoningStyle: Chain of Thought\n\n I need to find instances of human (wd:Q5) who are female (wd:Q6581072), have an occupation of physicist (wd:Q169470), and are citizens of the United States of America (wd:Q30). I will use the `wdt:P27` property for citizenship, `wdt:P106` for occupation, and `wdt:P21` for sex or gender.  I'll limit the results to 20 using `LIMIT`.",
+        "sparql": "```sparql\nSELECT ?person ?personLabel WHERE {\n  ?person wdt:P31 wd:Q5;\n          wdt:P21 wd:Q6581072;\n          wdt:P106 wd:Q169470;\n          wdt:P27 wd:Q30.\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"[AUTO_LANGUAGE],mul,en\". }\n}\nLIMIT 20\n```"
+    },
+    {
+        "question": "Movies that Christopher Nolan directed",
+        "reasoning_style": "Chain of Thought",
+        "thought": "ReasoningStyle: Chain of Thought\n\n This question asks for movies directed by Christopher Nolan.  First, we need to find Christopher Nolan's Wikidata ID.  That's Q25191.  Next, we need the property that links a film to its director. That's P57 (director).  Finally, we'll retrieve the film's label using the wikibase:label service.",
+        "sparql": "SELECT ?film ?filmLabel WHERE {\n  ?film wdt:P57 wd:Q25191.\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"[AUTO_LANGUAGE],mul,en\". }\n}"
+    }
+]
