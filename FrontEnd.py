@@ -7,43 +7,25 @@ import captureSparql as cs
 import fastapi
 import requests
 import os
+import time
 
 
 os.environ["STREAMLIT_WATCHER_IGNORE"] = "torch"
 
-st.markdown(
-    """
-    <style>
-    .user_message {
-        background-color: #A8DADC;
-        color: #1D3557;
-        padding: 10px;
-        border-radius: 20px;
-        margin: 10px 0;
-        width: fit-content;
-        max-width: 70%;
-        align-self: flex-end;
-    }
-    .bot_message {
-        background-color: #F1FAEE;
-        color: #457B9D;
-        padding: 10px;
-        border-radius: 20px;
-        margin: 10px 0;
-        width: fit-content;
-        max-width: 70%;
-        align-self: flex-start;
-    }
-    .chat-container {
-        display: flex;
-        flex-direction: column;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+def typewriter(text: str, speed: int):
+    tokens = text.split()
+    container = st.empty()
+    for index in range(len(tokens) + 1):
+        curr_full_text = " ".join(tokens[:index])
+        container.markdown(curr_full_text)
+        time.sleep(1 / speed)
+
+st.title("NL TO SPARQL LLM")
+
 with st.chat_message("assistant"):
  user_quest = st.chat_input("How can I assist you?")
+
+ 
 url = 'https://query.wikidata.org/sparql'
 
 if "dialog_history" not in st.session_state:
@@ -62,7 +44,14 @@ if user_quest:
     answer = lm.get_llm_response(user_quest, st.session_state.dialog_history)
     st.session_state.dialog_history.append({"role":"user","content":user_quest})
     with st.chat_message("assistant"):
-       st.markdown(answer)
+     if "SPARQL:" in answer:
+        reasoning_part, sparql_code = answer.split("SPARQL:", 1)
+        typewriter(reasoning_part.strip(), 10)
+        st.code(sparql_code.strip(), language="sparql")
+     else:
+        # fallback if split fails
+        typewriter(answer, 10)
+       
 
     query = cs.extract_sparql_from_response(answer)
     query = cs.clean_query(query)
