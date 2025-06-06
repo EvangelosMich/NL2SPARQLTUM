@@ -1,0 +1,2 @@
+This is a project done by Evangelos Michalopoulos and Henrique Leonel
+The main purpose is to use an LLM Model in order to generate SPARQL using Natural Language and send an API Request to wikidata in order to retrieve values
