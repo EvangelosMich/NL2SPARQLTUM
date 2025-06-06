@@ -1,0 +1,24 @@
+def search_wikidata_entity(query):
+    url = "https://www.wikidata.org/w/api.php"
+    params = {
+        "action": "wbsearchentities",
+        "format": "json",
+        "language": "en",
+        "search": query
+    }
+    response = requests.get(url, params=params)
+    data = response.json()
+    if data["search"]:
+        return data["search"][0]["id"]  # returns something like Q15228
+    else:
+        return None
+
+        def query_search_api(query):
+    url = "https://google.serper.dev/search"
+    payload = json.dumps({"q": query + " site:wikidata.org"})
+    headers = {
+        'X-API-KEY': 'b4b565c31a58bca9cb7e6201a23a007b3800a537',
+        'Content-Type': 'application/json'
+    }
+    response = requests.post(url, headers=headers, data=payload)
+    return response.json()
