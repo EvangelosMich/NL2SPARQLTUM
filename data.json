@@ -70,6 +70,5 @@
         "reasoning_style": "Self-Ask",
         "thought": "Subquestion 1: What is the QID for Christopher Nolan? \u2192 Q25191\nSubquestion 2: What property indicates the director of a film? \u2192 P57\nFinal Thought: I will count all films where Christopher Nolan (Q25191) is listed as the director.",
         "sparql": "SELECT (COUNT(?film) AS ?count) WHERE {\n  ?film wdt:P57 wd:Q25191.\n}"
-    },
-    "\"ReasoningStyle: Chain of Thought\\nThought: I need to find items that are instances (P31) of domestic cat (Q146).  Then I'll limit the results to 20 using LIMIT.  I'll also include the label service for readability.\\n\\nSPARQL:\\n```sparql\\nSELECT ?item ?itemLabel WHERE {\\n  ?item wdt:P31 wd:Q146.\\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \\\"[AUTO_LANGUAGE],mul,en\\\". }\\n}\\nLIMIT 20\\n```\\n\""
+    }
 ]
