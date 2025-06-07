@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import llmbasedbackend as lm
+import RAGModelHenrique.llmbasedbackend as lm
 import json
 import numpy as np
 import captureSparql as cs
@@ -10,7 +10,12 @@ import os
 import time
 
 
+
 os.environ["STREAMLIT_WATCHER_IGNORE"] = "torch"
+
+implementations = ["RAG_Model","LLM-Based-Agent"]
+impl_input = st.selectbox('Choose the desired Implementation', implementations)
+
 
 def typewriter(text: str, speed: int):
     tokens = text.split()
@@ -55,6 +60,11 @@ if user_quest:
 
     query = cs.extract_sparql_from_response(answer)
     query = cs.clean_query(query)
+    st.markdown(query)
+    if not query:
+     st.error("❌ No valid SPARQL query extracted from LLM response.")
+     st.stop()
+
     headers = {
     "Accept": "application/sparql-results+json"
 }

@@ -3,9 +3,23 @@ import google.generativeai as genai
 from sentence_transformers import SentenceTransformer
 import faiss
 import numpy as np
+import os
+import getpass
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_community.docstore.in_memory import InMemoryDocstore
+from langchain_community.vectorstores import FAISS
 
 # --- Configuration ---
-genai.configure(api_key="AIzaSyAVbJ-qe9dZJgOZdR251qIz1aBDHFSyWOw")
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+
+
+#Langchain api
+os.environ["LANGSMITH_TRACING"] = "true"
+os.environ["LANGSMITH_API_KEY"] = getpass.getpass()
+
+embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+
+
 
 # --- FAISS Setup ---
 example_questions = [
