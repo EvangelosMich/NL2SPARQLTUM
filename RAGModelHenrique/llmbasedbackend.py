@@ -9,6 +9,11 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import re
+import spacy
+from spacy.matcher import PhraseMatcher
+
+os.environ['CUDA_VISIBLE_DEVICES'] = ''
+os.environ['TORCH_USE_CUDA_DSA'] = '1'
 
 #Load API keys and enviroment variables
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -27,7 +32,27 @@ with open(os.path.join(script_dir,'..','examples','example_id.json'),'r',encodin
 
 #Embedding model from model.py
 
-EMBEDDER = SentenceTransformer("all-MiniLM-L6-v2")
+EMBEDDER = SentenceTransformer("all-MiniLM-L6-v2",device='cpu')
+
+
+
+try:
+    NLP = spacy.load("en_core_web_sm")
+
+    
+except OSError:
+    print("en_core_web_sm not found, trying en_core_web_trf...")
+    try:
+        NLP = spacy.load("en_core_web_trf")
+    except OSError:
+        print("No spaCy model found. Install with: python -m spacy download en_core_web_sm")
+        NLP = None
+
+if NLP:
+    NLP.disable_pipes(["parser","lemmatizer"])   
+
+
+
 EXAMPLE_QUESTIONS = [ex["question"] for ex in EXAMPLES]
 EXAMPLE_EMBEDDIGNS = EMBEDDER.encode(EXAMPLE_QUESTIONS,normalize_embeddings=True)
 
@@ -37,7 +62,7 @@ def resolve_id(phrase):
     #fallback to wikidata if id not found
     response = requests.get("https://www.wikidata.org/w/api.php", params= {
         "action" :"wbsearchentities",
-        "search" : phrase,
+        "search" : phrase.strip().title(),
         "language": "en",
         "format":"json",
         })       
@@ -53,26 +78,52 @@ def resolve_id(phrase):
          return None
 
 
-def extract_named_candidates(text):
+def extract_named_entities_spacy(text):
     # Basic heuristic: extract proper-noun phrases (capitalized sequences)
+    print(text)
+    if not NLP:
         return re.findall(r'([A-Z][a-z]+(?: [A-Z][a-z]+)*)', text)
+    doc = NLP(text.strip())
+    entities = []
+    
+
+    for ent in doc.ents:
+        if ent.label_ in ["PERSON","ORG","GPE","EVENT","WORK_OF_ART","LAW","LANGUAGE"]:
+            entities.append(ent.text)
+    for token in doc:
+        if token.pos_ == "PROPN" and token.text not in entities:
+            entities.append(token.text)
+    print(entities)
+    return list(set(entities))                
+
+def extract_named_candidates(text): 
+    print(text)
+    return extract_named_entities_spacy(text)
+
 
 def get_id_hints(user_question):
-
+    print(user_question)
 
     hints = []
-    lower_quest = user_question.lower()
-    for phrase,wikidata_path in ID_MAP.items():
-        
-        if phrase in lower_quest:
-            hints.append(f"(hint:{phrase} = {wikidata_path})")
+    doc = NLP(user_question)
+    matcher = PhraseMatcher(NLP.vocab, attr="LOWER")
+    patterns = [NLP(phrase) for phrase in ID_MAP]
+    matcher.add("WIKIDATA_HINTS", patterns)
+
+    matches = matcher(doc)
+    matched_phrases = set(doc[start:end].text.lower() for _, start, end in matches)
+
+    for phrase in matched_phrases:
+        if phrase in ID_MAP:
+            hints.append(f"(hint:{phrase} = {ID_MAP[phrase]})")
+
     if not hints:
         candidates = extract_named_candidates(user_question)
-        print(candidates)
-        for candidate in candidates:
-          fallback = resolve_id(candidate)
-          if fallback:
-            hints.append(f"(fallback:{user_question} = {fallback})")
+        print(candidates[:3])
+        for candidate in candidates[:3]:
+            fallback = resolve_id(candidate)
+            if fallback:
+                hints.append(f"(fallback:{candidate} = {fallback})")
 
     return " ".join(hints)
 
@@ -108,7 +159,7 @@ def build_prompt(user_question,examples,dialog_history,hints):
 def get_llm_response(user_question,dialog_history):
 # get hints in case there are any
     hints = get_id_hints(user_question)
-    print(f"The hits that ive gathered are{hints}")
+    print(f"The hints that ive gathered are{hints}")
     retrieved = retrieve_examples(user_question+" "+hints)
     final_prompt = build_prompt(user_question,retrieved,dialog_history,hints)
 
