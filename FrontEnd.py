@@ -8,7 +8,7 @@ import fastapi
 import requests
 import os
 import time
-import searchTool.sotestando as sa
+import searchTool.searchtool as sa
 
 
 
@@ -41,8 +41,6 @@ if backend_choice == "LLM Based Agent":
     st.title("NL TO SPARQL LLM (LLM Based Agent)")
 else:
    st.title("NL TO SPARQL LLM (RAG Model)")
-with st.chat_message("assistant"):
- user_quest = st.chat_input("How can I assist you?")
 
  
 url = 'https://query.wikidata.org/sparql'
@@ -59,6 +57,8 @@ for message in st.session_state.dialog_history:
       if "time" in message:
             st.write(f"⏱️ Answered in {round(message['time'], 2)} seconds")     
 
+user_quest = st.chat_input("How can I assist you?")
+
 if user_quest:
     start_time = time.time()
     with st.chat_message("user"):
@@ -66,9 +66,16 @@ if user_quest:
     if backend_choice == "RAG Model":   
      answer = lm.get_llm_response(user_quest, st.session_state.dialog_history)
     else:
-       answer =  sa.natural_language_to_sparql(user_quest)
+       search_terms_with_roles = sa.convert_query_to_wikidata_search(user_quest)
+       search_terms_with_roles = sa.normalize_roles(search_terms_with_roles)
+       term_strings = [entry["term"] for entry in search_terms_with_roles]
+       search_results_dict = sa.query_search_api(term_strings)
+       wikidata_ids = sa.extract_ids_per_term(search_results_dict)
+       wikidata_entities = sa.get_wikidata_descriptions(wikidata_ids)
+       answer =  sa.natural_language_to_sparql(user_quest,wikidata_entities,search_terms_with_roles)
        print(answer)
     st.session_state.dialog_history.append({"role":"user","content":user_quest})
+
     with st.chat_message("assistant"):
      sparql_code = None
      if "SPARQL:" in answer:
@@ -118,4 +125,36 @@ if user_quest:
     "content": answer,
     "table": df.to_dict(),
     "time": elapsed_time  # or json
-})   
+})
+    
+
+    #auto scroll
+    st.components.v1.html("""
+    <script>
+        function scrollToBottom() {
+            let container = parent.document.querySelector('section.main');
+            if (!container) return;
+
+            let lastHeight = -1;
+            let attempts = 0;
+
+            function tryScroll() {
+                const currentHeight = container.scrollHeight;
+                if (currentHeight !== lastHeight) {
+                    container.scrollTop = currentHeight;
+                    lastHeight = currentHeight;
+                    attempts = 0;
+                    setTimeout(tryScroll, 200);
+                } else if (attempts < 5) {
+                    attempts++;
+                    setTimeout(tryScroll, 200);
+                }
+            }
+
+            tryScroll();
+        }
+
+        scrollToBottom();
+    </script>
+    """, height=0)
+ 
