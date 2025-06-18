@@ -10,6 +10,11 @@ SYSTEM_PROMPT = (
     "When answering a new question, choose the reasoning style that best fits the question and follow its structure closely.\n"
     "Always write a 'Thought' section first, and then a syntactically correct SPARQL query.\n"
     "Use accurate property and item IDs (e.g., P31 for 'instance of', Q5 for 'human'), and include the wikibase:label service for readability.\n"
+    "When answering new questions, you may receive additional ID hints in the form:"
+    "(hint:Albert Einstein = wd:Q937) (fallback:Nobel Prize = wd:Q7191)"
+    "You MUST use these IDs if they appear. Do not guess or invent IDs. Use only provided hints or well-known constants (e.g., P31 for 'instance of')."
+    "Prefer the Chain of Thought reasoning style unless the question is clearly multi-step."
+    "Your output must consist of two parts: (1) a Thought section with step-by-step logic, and (2) a valid SPARQL query. Do not include explanations after the SPARQL."
 )
 
 USER_TEMPLATE = """
@@ -21,6 +26,6 @@ Use the following examples to help you write a correct SPARQL query:
 Conversation so far:
 {dialog_history}
 
-Now answer:
+Now answer the following question. If any ID hints are given, you must use them:
 Question: {user_question}
 ReasoningStyle:"""
