@@ -1,0 +1,1226 @@
+[
+  {
+    "wikidata_id": "Q1519",
+    "name": "Abu Dhabi",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1519"
+  },
+  {
+    "wikidata_id": "Q3787",
+    "name": "Abuja",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3787"
+  },
+  {
+    "wikidata_id": "Q3761",
+    "name": "Accra",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3761"
+  },
+  {
+    "wikidata_id": "Q3624",
+    "name": "Addis Ababa",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3624"
+  },
+  {
+    "wikidata_id": "Q131694",
+    "name": "Aden",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q131694"
+  },
+  {
+    "wikidata_id": "Q3561",
+    "name": "Algiers",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3561"
+  },
+  {
+    "wikidata_id": "Q3805",
+    "name": "Amman",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3805"
+  },
+  {
+    "wikidata_id": "Q727",
+    "name": "Amsterdam",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q727"
+  },
+  {
+    "wikidata_id": "Q1863",
+    "name": "Andorra la Vella",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1863"
+  },
+  {
+    "wikidata_id": "Q3640",
+    "name": "Ankara",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3640"
+  },
+  {
+    "wikidata_id": "Q3915",
+    "name": "Antananarivo",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3915"
+  },
+  {
+    "wikidata_id": "Q36260",
+    "name": "Apia",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q36260"
+  },
+  {
+    "wikidata_id": "Q23438",
+    "name": "Ashgabat",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q23438"
+  },
+  {
+    "wikidata_id": "Q3642",
+    "name": "Asmara",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3642"
+  },
+  {
+    "wikidata_id": "Q1520",
+    "name": "Astana",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1520"
+  },
+  {
+    "wikidata_id": "Q2933",
+    "name": "Asunción",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q2933"
+  },
+  {
+    "wikidata_id": "Q1524",
+    "name": "Athens",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1524"
+  },
+  {
+    "wikidata_id": "Q1530",
+    "name": "Baghdad",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1530"
+  },
+  {
+    "wikidata_id": "Q9248",
+    "name": "Baku",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q9248"
+  },
+  {
+    "wikidata_id": "Q3703",
+    "name": "Bamako",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3703"
+  },
+  {
+    "wikidata_id": "Q9279",
+    "name": "Bandar Seri Begawan",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q9279"
+  },
+  {
+    "wikidata_id": "Q1861",
+    "name": "Bangkok",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1861"
+  },
+  {
+    "wikidata_id": "Q3832",
+    "name": "Bangui",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3832"
+  },
+  {
+    "wikidata_id": "Q3726",
+    "name": "Banjul",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3726"
+  },
+  {
+    "wikidata_id": "Q41295",
+    "name": "Basseterre",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q41295"
+  },
+  {
+    "wikidata_id": "Q956",
+    "name": "Beijing",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q956"
+  },
+  {
+    "wikidata_id": "Q3820",
+    "name": "Beirut",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3820"
+  },
+  {
+    "wikidata_id": "Q3711",
+    "name": "Belgrade",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3711"
+  },
+  {
+    "wikidata_id": "Q3043",
+    "name": "Belmopan",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3043"
+  },
+  {
+    "wikidata_id": "Q64",
+    "name": "Berlin",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q64"
+  },
+  {
+    "wikidata_id": "Q70",
+    "name": "Bern",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q70"
+  },
+  {
+    "wikidata_id": "Q9361",
+    "name": "Bishkek",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q9361"
+  },
+  {
+    "wikidata_id": "Q3739",
+    "name": "Bissau",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3739"
+  },
+  {
+    "wikidata_id": "Q37701",
+    "name": "Bloemfontein",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q37701"
+  },
+  {
+    "wikidata_id": "Q2841",
+    "name": "Bogotá",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q2841"
+  },
+  {
+    "wikidata_id": "Q2844",
+    "name": "Brasília",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q2844"
+  },
+  {
+    "wikidata_id": "Q1780",
+    "name": "Bratislava",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1780"
+  },
+  {
+    "wikidata_id": "Q3844",
+    "name": "Brazzaville",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3844"
+  },
+  {
+    "wikidata_id": "Q36168",
+    "name": "Bridgetown",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q36168"
+  },
+  {
+    "wikidata_id": "Q19660",
+    "name": "Bucharest",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q19660"
+  },
+  {
+    "wikidata_id": "Q1781",
+    "name": "Budapest",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1781"
+  },
+  {
+    "wikidata_id": "Q1486",
+    "name": "Buenos Aires",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1486"
+  },
+  {
+    "wikidata_id": "Q85",
+    "name": "Cairo",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q85"
+  },
+  {
+    "wikidata_id": "Q3114",
+    "name": "Canberra",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3114"
+  },
+  {
+    "wikidata_id": "Q5465",
+    "name": "Cape Town",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q5465"
+  },
+  {
+    "wikidata_id": "Q1533",
+    "name": "Caracas",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1533"
+  },
+  {
+    "wikidata_id": "Q41699",
+    "name": "Castries",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q41699"
+  },
+  {
+    "wikidata_id": "Q21197",
+    "name": "Chișinău",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q21197"
+  },
+  {
+    "wikidata_id": "Q239",
+    "name": "City of Brussels",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q239"
+  },
+  {
+    "wikidata_id": "Q35381",
+    "name": "Colombo",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q35381"
+  },
+  {
+    "wikidata_id": "Q3685392",
+    "name": "Commune of Monaco",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3685392"
+  },
+  {
+    "wikidata_id": "Q3733",
+    "name": "Conakry",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3733"
+  },
+  {
+    "wikidata_id": "Q1748",
+    "name": "Copenhagen",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1748"
+  },
+  {
+    "wikidata_id": "Q3718",
+    "name": "Dakar",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3718"
+  },
+  {
+    "wikidata_id": "Q3766",
+    "name": "Damascus",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3766"
+  },
+  {
+    "wikidata_id": "Q1354",
+    "name": "Dhaka",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1354"
+  },
+  {
+    "wikidata_id": "Q9310",
+    "name": "Dili",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q9310"
+  },
+  {
+    "wikidata_id": "Q3604",
+    "name": "Djibouti",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3604"
+  },
+  {
+    "wikidata_id": "Q3866",
+    "name": "Dodoma",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3866"
+  },
+  {
+    "wikidata_id": "Q3861",
+    "name": "Doha",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3861"
+  },
+  {
+    "wikidata_id": "Q1761",
+    "name": "Dublin",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1761"
+  },
+  {
+    "wikidata_id": "Q9365",
+    "name": "Dushanbe",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q9365"
+  },
+  {
+    "wikidata_id": "Q3780",
+    "name": "Freetown",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3780"
+  },
+  {
+    "wikidata_id": "Q34126",
+    "name": "Funafuti",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q34126"
+  },
+  {
+    "wikidata_id": "Q3919",
+    "name": "Gaborone",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3919"
+  },
+  {
+    "wikidata_id": "Q10717",
+    "name": "Georgetown",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q10717"
+  },
+  {
+    "wikidata_id": "Q167551",
+    "name": "Gitega",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q167551"
+  },
+  {
+    "wikidata_id": "Q1555",
+    "name": "Guatemala City",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1555"
+  },
+  {
+    "wikidata_id": "Q1858",
+    "name": "Hanoi",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1858"
+  },
+  {
+    "wikidata_id": "Q3921",
+    "name": "Harare",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3921"
+  },
+  {
+    "wikidata_id": "Q1563",
+    "name": "Havana",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1563"
+  },
+  {
+    "wikidata_id": "Q1757",
+    "name": "Helsinki",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1757"
+  },
+  {
+    "wikidata_id": "Q40921",
+    "name": "Honiara",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q40921"
+  },
+  {
+    "wikidata_id": "Q1362",
+    "name": "Islamabad",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1362"
+  },
+  {
+    "wikidata_id": "Q3630",
+    "name": "Jakarta",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3630"
+  },
+  {
+    "wikidata_id": "Q1218",
+    "name": "Jerusalem",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1218"
+  },
+  {
+    "wikidata_id": "Q1218",
+    "name": "Jerusalem",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1218"
+  },
+  {
+    "wikidata_id": "Q1947",
+    "name": "Juba",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1947"
+  },
+  {
+    "wikidata_id": "Q5838",
+    "name": "Kabul",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q5838"
+  },
+  {
+    "wikidata_id": "Q3894",
+    "name": "Kampala",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3894"
+  },
+  {
+    "wikidata_id": "Q3037",
+    "name": "Kathmandu",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3037"
+  },
+  {
+    "wikidata_id": "Q1963",
+    "name": "Khartoum",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1963"
+  },
+  {
+    "wikidata_id": "Q3859",
+    "name": "Kigali",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3859"
+  },
+  {
+    "wikidata_id": "Q34692",
+    "name": "Kingston",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q34692"
+  },
+  {
+    "wikidata_id": "Q41474",
+    "name": "Kingstown",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q41474"
+  },
+  {
+    "wikidata_id": "Q3838",
+    "name": "Kinshasa",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3838"
+  },
+  {
+    "wikidata_id": "Q1865",
+    "name": "Kuala Lumpur",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1865"
+  },
+  {
+    "wikidata_id": "Q35178",
+    "name": "Kuwait City",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q35178"
+  },
+  {
+    "wikidata_id": "Q1899",
+    "name": "Kyiv",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1899"
+  },
+  {
+    "wikidata_id": "Q1491",
+    "name": "La Paz",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1491"
+  },
+  {
+    "wikidata_id": "Q3825",
+    "name": "Libreville",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3825"
+  },
+  {
+    "wikidata_id": "Q3876",
+    "name": "Lilongwe",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3876"
+  },
+  {
+    "wikidata_id": "Q2868",
+    "name": "Lima",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q2868"
+  },
+  {
+    "wikidata_id": "Q597",
+    "name": "Lisbon",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q597"
+  },
+  {
+    "wikidata_id": "Q437",
+    "name": "Ljubljana",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q437"
+  },
+  {
+    "wikidata_id": "Q101418",
+    "name": "Lobamba",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q101418"
+  },
+  {
+    "wikidata_id": "Q3792",
+    "name": "Lomé",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3792"
+  },
+  {
+    "wikidata_id": "Q84",
+    "name": "London",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q84"
+  },
+  {
+    "wikidata_id": "Q3897",
+    "name": "Luanda",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3897"
+  },
+  {
+    "wikidata_id": "Q3881",
+    "name": "Lusaka",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3881"
+  },
+  {
+    "wikidata_id": "Q1842",
+    "name": "Luxembourg",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1842"
+  },
+  {
+    "wikidata_id": "Q2807",
+    "name": "Madrid",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q2807"
+  },
+  {
+    "wikidata_id": "Q12919",
+    "name": "Majuro",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q12919"
+  },
+  {
+    "wikidata_id": "Q3818",
+    "name": "Malabo",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3818"
+  },
+  {
+    "wikidata_id": "Q9347",
+    "name": "Malé",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q9347"
+  },
+  {
+    "wikidata_id": "Q3274",
+    "name": "Managua",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3274"
+  },
+  {
+    "wikidata_id": "Q3882",
+    "name": "Manama",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3882"
+  },
+  {
+    "wikidata_id": "Q1461",
+    "name": "Manila",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1461"
+  },
+  {
+    "wikidata_id": "Q3889",
+    "name": "Maputo",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3889"
+  },
+  {
+    "wikidata_id": "Q3909",
+    "name": "Maseru",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3909"
+  },
+  {
+    "wikidata_id": "Q3904",
+    "name": "Mbabane",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3904"
+  },
+  {
+    "wikidata_id": "Q1489",
+    "name": "Mexico City",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1489"
+  },
+  {
+    "wikidata_id": "Q2280",
+    "name": "Minsk",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q2280"
+  },
+  {
+    "wikidata_id": "Q2449",
+    "name": "Mogadishu",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q2449"
+  },
+  {
+    "wikidata_id": "Q3748",
+    "name": "Monrovia",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3748"
+  },
+  {
+    "wikidata_id": "Q1335",
+    "name": "Montevideo",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1335"
+  },
+  {
+    "wikidata_id": "Q3901",
+    "name": "Moroni",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3901"
+  },
+  {
+    "wikidata_id": "Q649",
+    "name": "Moscow",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q649"
+  },
+  {
+    "wikidata_id": "Q3826",
+    "name": "Muscat",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3826"
+  },
+  {
+    "wikidata_id": "Q3659",
+    "name": "N'Djamena",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3659"
+  },
+  {
+    "wikidata_id": "Q3870",
+    "name": "Nairobi",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3870"
+  },
+  {
+    "wikidata_id": "Q2467",
+    "name": "Nassau",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q2467"
+  },
+  {
+    "wikidata_id": "Q37400",
+    "name": "Naypyidaw",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q37400"
+  },
+  {
+    "wikidata_id": "Q987",
+    "name": "New Delhi",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q987"
+  },
+  {
+    "wikidata_id": "Q515229",
+    "name": "Ngerulmud",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q515229"
+  },
+  {
+    "wikidata_id": "Q3674",
+    "name": "Niamey",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3674"
+  },
+  {
+    "wikidata_id": "Q3856",
+    "name": "Nicosia",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3856"
+  },
+  {
+    "wikidata_id": "Q3688",
+    "name": "Nouakchott",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3688"
+  },
+  {
+    "wikidata_id": "Q38834",
+    "name": "Nukuʻalofa",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q38834"
+  },
+  {
+    "wikidata_id": "Q585",
+    "name": "Oslo",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q585"
+  },
+  {
+    "wikidata_id": "Q1930",
+    "name": "Ottawa",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1930"
+  },
+  {
+    "wikidata_id": "Q3777",
+    "name": "Ouagadougou",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3777"
+  },
+  {
+    "wikidata_id": "Q42751",
+    "name": "Palikir",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q42751"
+  },
+  {
+    "wikidata_id": "Q3306",
+    "name": "Panama City",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3306"
+  },
+  {
+    "wikidata_id": "Q3001",
+    "name": "Paramaribo",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3001"
+  },
+  {
+    "wikidata_id": "Q90",
+    "name": "Paris",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q90"
+  },
+  {
+    "wikidata_id": "Q1850",
+    "name": "Phnom Penh",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1850"
+  },
+  {
+    "wikidata_id": "Q23564",
+    "name": "Podgorica",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q23564"
+  },
+  {
+    "wikidata_id": "Q3929",
+    "name": "Port Louis",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3929"
+  },
+  {
+    "wikidata_id": "Q36526",
+    "name": "Port Moresby",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q36526"
+  },
+  {
+    "wikidata_id": "Q37806",
+    "name": "Port Vila",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q37806"
+  },
+  {
+    "wikidata_id": "Q39178",
+    "name": "Port of Spain",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q39178"
+  },
+  {
+    "wikidata_id": "Q34261",
+    "name": "Port-au-Prince",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q34261"
+  },
+  {
+    "wikidata_id": "Q3799",
+    "name": "Porto-Novo",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3799"
+  },
+  {
+    "wikidata_id": "Q1085",
+    "name": "Prague",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1085"
+  },
+  {
+    "wikidata_id": "Q3751",
+    "name": "Praia",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3751"
+  },
+  {
+    "wikidata_id": "Q3926",
+    "name": "Pretoria",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3926"
+  },
+  {
+    "wikidata_id": "Q18808",
+    "name": "Pyongyang",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q18808"
+  },
+  {
+    "wikidata_id": "Q2900",
+    "name": "Quito",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q2900"
+  },
+  {
+    "wikidata_id": "Q3551",
+    "name": "Rabat",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3551"
+  },
+  {
+    "wikidata_id": "Q158119",
+    "name": "Ramallah",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q158119"
+  },
+  {
+    "wikidata_id": "Q1764",
+    "name": "Reykjavík",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1764"
+  },
+  {
+    "wikidata_id": "Q1773",
+    "name": "Riga",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1773"
+  },
+  {
+    "wikidata_id": "Q3692",
+    "name": "Riyadh",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3692"
+  },
+  {
+    "wikidata_id": "Q220",
+    "name": "Rome",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q220"
+  },
+  {
+    "wikidata_id": "Q36281",
+    "name": "Roseau",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q36281"
+  },
+  {
+    "wikidata_id": "Q36262",
+    "name": "Saint John's",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q36262"
+  },
+  {
+    "wikidata_id": "Q3070",
+    "name": "San José",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3070"
+  },
+  {
+    "wikidata_id": "Q1848",
+    "name": "San Marino",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1848"
+  },
+  {
+    "wikidata_id": "Q3110",
+    "name": "San Salvador",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3110"
+  },
+  {
+    "wikidata_id": "Q2471",
+    "name": "Sanaa",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q2471"
+  },
+  {
+    "wikidata_id": "Q2887",
+    "name": "Santiago",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q2887"
+  },
+  {
+    "wikidata_id": "Q34820",
+    "name": "Santo Domingo",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q34820"
+  },
+  {
+    "wikidata_id": "Q11194",
+    "name": "Sarajevo",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q11194"
+  },
+  {
+    "wikidata_id": "Q8684",
+    "name": "Seoul",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q8684"
+  },
+  {
+    "wikidata_id": "Q8684",
+    "name": "Seoul",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q8684"
+  },
+  {
+    "wikidata_id": "Q334",
+    "name": "Singapore",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q334"
+  },
+  {
+    "wikidata_id": "Q384",
+    "name": "Skopje",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q384"
+  },
+  {
+    "wikidata_id": "Q472",
+    "name": "Sofia",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q472"
+  },
+  {
+    "wikidata_id": "Q131233",
+    "name": "South Tarawa",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q131233"
+  },
+  {
+    "wikidata_id": "Q41963",
+    "name": "Sri Jayawardenepura Kotte",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q41963"
+  },
+  {
+    "wikidata_id": "Q41547",
+    "name": "St. George's",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q41547"
+  },
+  {
+    "wikidata_id": "Q1754",
+    "name": "Stockholm",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1754"
+  },
+  {
+    "wikidata_id": "Q2907",
+    "name": "Sucre",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q2907"
+  },
+  {
+    "wikidata_id": "Q38807",
+    "name": "Suva",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q38807"
+  },
+  {
+    "wikidata_id": "Q3932",
+    "name": "São Tomé",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3932"
+  },
+  {
+    "wikidata_id": "Q1867",
+    "name": "Taipei",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1867"
+  },
+  {
+    "wikidata_id": "Q1770",
+    "name": "Tallinn",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1770"
+  },
+  {
+    "wikidata_id": "Q2486",
+    "name": "Tarawa",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q2486"
+  },
+  {
+    "wikidata_id": "Q269",
+    "name": "Tashkent",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q269"
+  },
+  {
+    "wikidata_id": "Q994",
+    "name": "Tbilisi",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q994"
+  },
+  {
+    "wikidata_id": "Q3238",
+    "name": "Tegucigalpa",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3238"
+  },
+  {
+    "wikidata_id": "Q3616",
+    "name": "Tehran",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3616"
+  },
+  {
+    "wikidata_id": "Q9270",
+    "name": "Thimphu",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q9270"
+  },
+  {
+    "wikidata_id": "Q19689",
+    "name": "Tirana",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q19689"
+  },
+  {
+    "wikidata_id": "Q1490",
+    "name": "Tokyo",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1490"
+  },
+  {
+    "wikidata_id": "Q3579",
+    "name": "Tripoli",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3579"
+  },
+  {
+    "wikidata_id": "Q3572",
+    "name": "Tunis",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3572"
+  },
+  {
+    "wikidata_id": "Q23430",
+    "name": "Ulaanbaatar",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q23430"
+  },
+  {
+    "wikidata_id": "Q1844",
+    "name": "Vaduz",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1844"
+  },
+  {
+    "wikidata_id": "Q23800",
+    "name": "Valletta",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q23800"
+  },
+  {
+    "wikidata_id": "Q3940",
+    "name": "Victoria",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3940"
+  },
+  {
+    "wikidata_id": "Q1741",
+    "name": "Vienna",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1741"
+  },
+  {
+    "wikidata_id": "Q9326",
+    "name": "Vientiane",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q9326"
+  },
+  {
+    "wikidata_id": "Q216",
+    "name": "Vilnius",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q216"
+  },
+  {
+    "wikidata_id": "Q270",
+    "name": "Warsaw",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q270"
+  },
+  {
+    "wikidata_id": "Q61",
+    "name": "Washington, D.C.",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q61"
+  },
+  {
+    "wikidata_id": "Q23661",
+    "name": "Wellington",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q23661"
+  },
+  {
+    "wikidata_id": "Q3935",
+    "name": "Windhoek",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3935"
+  },
+  {
+    "wikidata_id": "Q3768",
+    "name": "Yamoussoukro",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3768"
+  },
+  {
+    "wikidata_id": "Q3808",
+    "name": "Yaoundé",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3808"
+  },
+  {
+    "wikidata_id": "Q31026",
+    "name": "Yaren District",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q31026"
+  },
+  {
+    "wikidata_id": "Q1953",
+    "name": "Yerevan",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1953"
+  },
+  {
+    "wikidata_id": "Q1435",
+    "name": "Zagreb",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1435"
+  }
+]

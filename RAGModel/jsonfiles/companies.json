@@ -1,0 +1,902 @@
+[
+  {
+    "wikidata_id": "Q8466",
+    "name": "1. FC Kaiserslautern",
+    "description": "German association football club",
+    "wikidata_url": "http://www.wikidata.org/entity/Q8466"
+  },
+  {
+    "wikidata_id": "Q105254",
+    "name": "1. FSV Mainz 05",
+    "description": "Bundesliga football club in Germany",
+    "wikidata_url": "http://www.wikidata.org/entity/Q105254"
+  },
+  {
+    "wikidata_id": "Q27585",
+    "name": "AOL",
+    "description": "American web portal and online service provider",
+    "wikidata_url": "http://www.wikidata.org/entity/Q27585"
+  },
+  {
+    "wikidata_id": "Q11463",
+    "name": "Adobe",
+    "description": "American multinational computer software company",
+    "wikidata_url": "http://www.wikidata.org/entity/Q11463"
+  },
+  {
+    "wikidata_id": "Q25775",
+    "name": "Affiliated Managers Group",
+    "description": "global investment management company",
+    "wikidata_url": "http://www.wikidata.org/entity/Q25775"
+  },
+  {
+    "wikidata_id": "Q26298",
+    "name": "Agricultural Bank of China",
+    "description": "major bank in the People's Republic of China",
+    "wikidata_url": "http://www.wikidata.org/entity/Q26298"
+  },
+  {
+    "wikidata_id": "Q139604",
+    "name": "Akdim",
+    "description": "organization",
+    "wikidata_url": "http://www.wikidata.org/entity/Q139604"
+  },
+  {
+    "wikidata_id": "Q4396",
+    "name": "All-Ukrainian Union \"Svoboda\"",
+    "description": "far-right Ukrainian nationalist political party",
+    "wikidata_url": "http://www.wikidata.org/entity/Q4396"
+  },
+  {
+    "wikidata_id": "Q49766",
+    "name": "Alliance '90/The Greens",
+    "description": "green political party in Germany",
+    "wikidata_url": "http://www.wikidata.org/entity/Q49766"
+  },
+  {
+    "wikidata_id": "Q21637",
+    "name": "American Civil Liberties Union",
+    "description": "American advocacy group",
+    "wikidata_url": "http://www.wikidata.org/entity/Q21637"
+  },
+  {
+    "wikidata_id": "Q42970",
+    "name": "Amnesty International",
+    "description": "non-governmental organization based in the United Kingdom",
+    "wikidata_url": "http://www.wikidata.org/entity/Q42970"
+  },
+  {
+    "wikidata_id": "Q11207",
+    "name": "Arri",
+    "description": "supplier of motion picture film equipment",
+    "wikidata_url": "http://www.wikidata.org/entity/Q11207"
+  },
+  {
+    "wikidata_id": "Q40469",
+    "name": "Associated Press",
+    "description": "multinational nonprofit news agency headquartered in New York, United States",
+    "wikidata_url": "http://www.wikidata.org/entity/Q40469"
+  },
+  {
+    "wikidata_id": "Q27074",
+    "name": "Aston Martin Lagonda",
+    "description": "British luxury sports car manufacturer",
+    "wikidata_url": "http://www.wikidata.org/entity/Q27074"
+  },
+  {
+    "wikidata_id": "Q8322",
+    "name": "Atmosphere Visual Effects",
+    "description": "Vancouver-based visual effects company",
+    "wikidata_url": "http://www.wikidata.org/entity/Q8322"
+  },
+  {
+    "wikidata_id": "Q75040",
+    "name": "Austrian Handball Federation",
+    "description": "national association for the promotion of handball in Austria",
+    "wikidata_url": "http://www.wikidata.org/entity/Q75040"
+  },
+  {
+    "wikidata_id": "Q27152",
+    "name": "Auto Union",
+    "description": "German automobile manufacturer",
+    "wikidata_url": "http://www.wikidata.org/entity/Q27152"
+  },
+  {
+    "wikidata_id": "Q27110",
+    "name": "Autobianchi",
+    "description": "Italian automobile manufacturer",
+    "wikidata_url": "http://www.wikidata.org/entity/Q27110"
+  },
+  {
+    "wikidata_id": "Q26725",
+    "name": "Autodeterminaziorako Bilgunea",
+    "description": "electoral platform",
+    "wikidata_url": "http://www.wikidata.org/entity/Q26725"
+  },
+  {
+    "wikidata_id": "Q27143",
+    "name": "Avia",
+    "description": "aircraft and automotive manufacturer",
+    "wikidata_url": "http://www.wikidata.org/entity/Q27143"
+  },
+  {
+    "wikidata_id": "Q27423",
+    "name": "BYD Auto",
+    "description": "Chinese automobile manufacturer",
+    "wikidata_url": "http://www.wikidata.org/entity/Q27423"
+  },
+  {
+    "wikidata_id": "Q131874",
+    "name": "Baltimore Symphony Orchestra",
+    "description": "symphony orchestra based in Baltimore, Maryland, United States",
+    "wikidata_url": "http://www.wikidata.org/entity/Q131874"
+  },
+  {
+    "wikidata_id": "Q36779",
+    "name": "Belarusians Will!",
+    "description": "socio-cultural campaign to popularize Belarusian culture",
+    "wikidata_url": "http://www.wikidata.org/entity/Q36779"
+  },
+  {
+    "wikidata_id": "Q27432",
+    "name": "Bethlehem Steel",
+    "description": "steel producer and shipbuilder",
+    "wikidata_url": "http://www.wikidata.org/entity/Q27432"
+  },
+  {
+    "wikidata_id": "Q21079",
+    "name": "Bitly",
+    "description": "link management platform",
+    "wikidata_url": "http://www.wikidata.org/entity/Q21079"
+  },
+  {
+    "wikidata_id": "Q386",
+    "name": "Bixi",
+    "description": "bicycle-sharing system in Montreal, Québec, Canada",
+    "wikidata_url": "http://www.wikidata.org/entity/Q386"
+  },
+  {
+    "wikidata_id": "Q66",
+    "name": "Boeing",
+    "description": "American global aerospace and defense corporation",
+    "wikidata_url": "http://www.wikidata.org/entity/Q66"
+  },
+  {
+    "wikidata_id": "Q58733",
+    "name": "CONMEBOL",
+    "description": "governing body of association football in South America",
+    "wikidata_url": "http://www.wikidata.org/entity/Q58733"
+  },
+  {
+    "wikidata_id": "Q118483",
+    "name": "Carter Center",
+    "description": "American nonprofit organization",
+    "wikidata_url": "http://www.wikidata.org/entity/Q118483"
+  },
+  {
+    "wikidata_id": "Q49762",
+    "name": "Christian Democratic Union",
+    "description": "centre-right political party in Germany",
+    "wikidata_url": "http://www.wikidata.org/entity/Q49762"
+  },
+  {
+    "wikidata_id": "Q49754",
+    "name": "Christian Democratic Union (GDR)",
+    "description": "political party in East Germany, merged with West German CDU after reunification",
+    "wikidata_url": "http://www.wikidata.org/entity/Q49754"
+  },
+  {
+    "wikidata_id": "Q49763",
+    "name": "Christian Social Union of Bavaria",
+    "description": "conservative party in Bavaria, Germany",
+    "wikidata_url": "http://www.wikidata.org/entity/Q49763"
+  },
+  {
+    "wikidata_id": "Q23055",
+    "name": "Civic Party",
+    "description": "political party in Hong Kong",
+    "wikidata_url": "http://www.wikidata.org/entity/Q23055"
+  },
+  {
+    "wikidata_id": "Q27511",
+    "name": "Daihatsu",
+    "description": "Japanese automobile manufacturer",
+    "wikidata_url": "http://www.wikidata.org/entity/Q27511"
+  },
+  {
+    "wikidata_id": "Q21916",
+    "name": "Democratic Alliance for the Betterment and Progress of Hong Kong",
+    "description": "political party in Hong Kong",
+    "wikidata_url": "http://www.wikidata.org/entity/Q21916"
+  },
+  {
+    "wikidata_id": "Q49756",
+    "name": "Democratic Farmers' Party of Germany",
+    "description": "East German political party",
+    "wikidata_url": "http://www.wikidata.org/entity/Q49756"
+  },
+  {
+    "wikidata_id": "Q21892",
+    "name": "Democratic Party",
+    "description": "political party in Hong Kong",
+    "wikidata_url": "http://www.wikidata.org/entity/Q21892"
+  },
+  {
+    "wikidata_id": "Q29552",
+    "name": "Democratic Party",
+    "description": "American political party",
+    "wikidata_url": "http://www.wikidata.org/entity/Q29552"
+  },
+  {
+    "wikidata_id": "Q22794",
+    "name": "Democratic Party",
+    "description": "2011–2014 political party in South Korea",
+    "wikidata_url": "http://www.wikidata.org/entity/Q22794"
+  },
+  {
+    "wikidata_id": "Q47729",
+    "name": "Democratic Party",
+    "description": "Italian social-democratic political party",
+    "wikidata_url": "http://www.wikidata.org/entity/Q47729"
+  },
+  {
+    "wikidata_id": "Q9396",
+    "name": "Deutsche Telekom",
+    "description": "partially privatized German telecommunications company",
+    "wikidata_url": "http://www.wikidata.org/entity/Q9396"
+  },
+  {
+    "wikidata_id": "Q45416",
+    "name": "Deutscher Journalisten-Verband",
+    "description": "Trade union and professional association of German journalists",
+    "wikidata_url": "http://www.wikidata.org/entity/Q45416"
+  },
+  {
+    "wikidata_id": "Q22748",
+    "name": "Die PARTEI",
+    "description": "German satirical political party",
+    "wikidata_url": "http://www.wikidata.org/entity/Q22748"
+  },
+  {
+    "wikidata_id": "Q19864",
+    "name": "Dixons Retail",
+    "description": "former British consumer electronics retailer",
+    "wikidata_url": "http://www.wikidata.org/entity/Q19864"
+  },
+  {
+    "wikidata_id": "Q27564",
+    "name": "Dodge",
+    "description": "American-based brand of automobiles, minivans, and sport utility vehicles and division of Stellantis North America",
+    "wikidata_url": "http://www.wikidata.org/entity/Q27564"
+  },
+  {
+    "wikidata_id": "Q27300",
+    "name": "Dong Woo Animation",
+    "description": "animation studio in Seoul, South Korea",
+    "wikidata_url": "http://www.wikidata.org/entity/Q27300"
+  },
+  {
+    "wikidata_id": "Q6795",
+    "name": "Dresden Porcelain",
+    "description": "German porcelain factory",
+    "wikidata_url": "http://www.wikidata.org/entity/Q6795"
+  },
+  {
+    "wikidata_id": "Q55156",
+    "name": "FOM University of Applied Sciences",
+    "description": "German university",
+    "wikidata_url": "http://www.wikidata.org/entity/Q55156"
+  },
+  {
+    "wikidata_id": "Q49673",
+    "name": "Fatherland Union",
+    "description": "political party in Liechtenstein",
+    "wikidata_url": "http://www.wikidata.org/entity/Q49673"
+  },
+  {
+    "wikidata_id": "Q47817",
+    "name": "Five Star Movement",
+    "description": "Italian political party",
+    "wikidata_url": "http://www.wikidata.org/entity/Q47817"
+  },
+  {
+    "wikidata_id": "Q12962",
+    "name": "France Arise",
+    "description": "political party in France",
+    "wikidata_url": "http://www.wikidata.org/entity/Q12962"
+  },
+  {
+    "wikidata_id": "Q49668",
+    "name": "Free List",
+    "description": "political party",
+    "wikidata_url": "http://www.wikidata.org/entity/Q49668"
+  },
+  {
+    "wikidata_id": "Q48413",
+    "name": "Free Software Foundation",
+    "description": "non-profit organization for support for the free software movement",
+    "wikidata_url": "http://www.wikidata.org/entity/Q48413"
+  },
+  {
+    "wikidata_id": "Q47795",
+    "name": "Future and Freedom",
+    "description": "political party",
+    "wikidata_url": "http://www.wikidata.org/entity/Q47795"
+  },
+  {
+    "wikidata_id": "Q24349",
+    "name": "German Cyclists Association",
+    "description": "German association for cyclists",
+    "wikidata_url": "http://www.wikidata.org/entity/Q24349"
+  },
+  {
+    "wikidata_id": "Q27065",
+    "name": "Gogo Inflight Internet",
+    "description": "provider of in-flight broadband Internet service and other connectivity services",
+    "wikidata_url": "http://www.wikidata.org/entity/Q27065"
+  },
+  {
+    "wikidata_id": "Q2188",
+    "name": "Gyldendal",
+    "description": "Danish publishing house",
+    "wikidata_url": "http://www.wikidata.org/entity/Q2188"
+  },
+  {
+    "wikidata_id": "Q41053",
+    "name": "Hezbollah",
+    "description": "Lebanese Shia Islamist political party and armed organization",
+    "wikidata_url": "http://www.wikidata.org/entity/Q41053"
+  },
+  {
+    "wikidata_id": "Q3122",
+    "name": "Home Instead Senior Care",
+    "description": "elderly care company",
+    "wikidata_url": "http://www.wikidata.org/entity/Q3122"
+  },
+  {
+    "wikidata_id": "Q128316",
+    "name": "Honolulu Museum of Art",
+    "description": "art museum in Honolulu, Hawaii",
+    "wikidata_url": "http://www.wikidata.org/entity/Q128316"
+  },
+  {
+    "wikidata_id": "Q25996",
+    "name": "Hopson Development",
+    "description": "real estate private company",
+    "wikidata_url": "http://www.wikidata.org/entity/Q25996"
+  },
+  {
+    "wikidata_id": "Q16412",
+    "name": "Hungarian Socialist Workers' Party",
+    "description": "ruling political party in Hungary from 1956 to 1989",
+    "wikidata_url": "http://www.wikidata.org/entity/Q16412"
+  },
+  {
+    "wikidata_id": "Q15805",
+    "name": "Hutchison Whampoa",
+    "description": "former Hong Kong investment holding company, merged into CK Hutchison Holdings",
+    "wikidata_url": "http://www.wikidata.org/entity/Q15805"
+  },
+  {
+    "wikidata_id": "Q8538",
+    "name": "Image Engine",
+    "description": "visual effects company",
+    "wikidata_url": "http://www.wikidata.org/entity/Q8538"
+  },
+  {
+    "wikidata_id": "Q11055",
+    "name": "Impact100 Sonoma",
+    "description": "Women's giving circle from California",
+    "wikidata_url": "http://www.wikidata.org/entity/Q11055"
+  },
+  {
+    "wikidata_id": "Q26463",
+    "name": "Industrial and Commercial Bank of China",
+    "description": "Chinese multinational banking company",
+    "wikidata_url": "http://www.wikidata.org/entity/Q26463"
+  },
+  {
+    "wikidata_id": "Q115095",
+    "name": "Institut de Droit International",
+    "description": "learned society",
+    "wikidata_url": "http://www.wikidata.org/entity/Q115095"
+  },
+  {
+    "wikidata_id": "Q131566",
+    "name": "Institute of Electrical and Electronics Engineers",
+    "description": "American professional association for electronic engineering and electrical engineering",
+    "wikidata_url": "http://www.wikidata.org/entity/Q131566"
+  },
+  {
+    "wikidata_id": "Q129723",
+    "name": "International Student Identity Card",
+    "description": "internationally accepted proof of student status",
+    "wikidata_url": "http://www.wikidata.org/entity/Q129723"
+  },
+  {
+    "wikidata_id": "Q52454",
+    "name": "International Tennis Hall of Fame",
+    "description": "tennis museum and venue in Newport, USA",
+    "wikidata_url": "http://www.wikidata.org/entity/Q52454"
+  },
+  {
+    "wikidata_id": "Q133648",
+    "name": "Internationale Bachakademie Stuttgart",
+    "description": "foundation",
+    "wikidata_url": "http://www.wikidata.org/entity/Q133648"
+  },
+  {
+    "wikidata_id": "Q44460",
+    "name": "Invisible Children",
+    "description": "nonprofit organization",
+    "wikidata_url": "http://www.wikidata.org/entity/Q44460"
+  },
+  {
+    "wikidata_id": "Q49135",
+    "name": "Isabella Stewart Gardner Museum",
+    "description": "art museum in Boston, Massachusetts, United States",
+    "wikidata_url": "http://www.wikidata.org/entity/Q49135"
+  },
+  {
+    "wikidata_id": "Q47768",
+    "name": "Italy of Values",
+    "description": "political party in Italy",
+    "wikidata_url": "http://www.wikidata.org/entity/Q47768"
+  },
+  {
+    "wikidata_id": "Q41189",
+    "name": "Jewish Agency for Israel",
+    "description": "Zionist non-profit organization established in 1929",
+    "wikidata_url": "http://www.wikidata.org/entity/Q41189"
+  },
+  {
+    "wikidata_id": "Q46559",
+    "name": "Jewish Power",
+    "description": "Religious Zionist party",
+    "wikidata_url": "http://www.wikidata.org/entity/Q46559"
+  },
+  {
+    "wikidata_id": "Q8794",
+    "name": "Justice First",
+    "description": "political party in Venezuela",
+    "wikidata_url": "http://www.wikidata.org/entity/Q8794"
+  },
+  {
+    "wikidata_id": "Q19077",
+    "name": "Justice and Development Party",
+    "description": "conservative-democratic political party in Turkey",
+    "wikidata_url": "http://www.wikidata.org/entity/Q19077"
+  },
+  {
+    "wikidata_id": "Q1431",
+    "name": "KDE",
+    "description": "free software project and community",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1431"
+  },
+  {
+    "wikidata_id": "Q39655",
+    "name": "Kadima",
+    "description": "Israeli political party (2005–2015)",
+    "wikidata_url": "http://www.wikidata.org/entity/Q39655"
+  },
+  {
+    "wikidata_id": "Q277",
+    "name": "Kilchoman distillery",
+    "description": "distillery that produces single malt Scotch whisky on Islay",
+    "wikidata_url": "http://www.wikidata.org/entity/Q277"
+  },
+  {
+    "wikidata_id": "Q49624",
+    "name": "Korean Social Democratic Party",
+    "description": "political party in North Korea",
+    "wikidata_url": "http://www.wikidata.org/entity/Q49624"
+  },
+  {
+    "wikidata_id": "Q27650",
+    "name": "LPGA",
+    "description": "association of female professional golfers in the United States",
+    "wikidata_url": "http://www.wikidata.org/entity/Q27650"
+  },
+  {
+    "wikidata_id": "Q23057",
+    "name": "Labour Party",
+    "description": "political party in Hong Kong",
+    "wikidata_url": "http://www.wikidata.org/entity/Q23057"
+  },
+  {
+    "wikidata_id": "Q20533",
+    "name": "Lebenshilfe Deutschland",
+    "description": "non-profit association",
+    "wikidata_url": "http://www.wikidata.org/entity/Q20533"
+  },
+  {
+    "wikidata_id": "Q14799",
+    "name": "Lenovo",
+    "description": "Chinese multinational technology company established in 1984",
+    "wikidata_url": "http://www.wikidata.org/entity/Q14799"
+  },
+  {
+    "wikidata_id": "Q49755",
+    "name": "Liberal Democratic Party of Germany",
+    "description": "German political party",
+    "wikidata_url": "http://www.wikidata.org/entity/Q49755"
+  },
+  {
+    "wikidata_id": "Q9624",
+    "name": "Liberal Democrats",
+    "description": "centrist political party in the United Kingdom",
+    "wikidata_url": "http://www.wikidata.org/entity/Q9624"
+  },
+  {
+    "wikidata_id": "Q20916",
+    "name": "Liberty Korea Party",
+    "description": "1997–2020 political party in South Korea",
+    "wikidata_url": "http://www.wikidata.org/entity/Q20916"
+  },
+  {
+    "wikidata_id": "Q7240",
+    "name": "Lockheed Martin",
+    "description": "US aerospace and defense manufacturer",
+    "wikidata_url": "http://www.wikidata.org/entity/Q7240"
+  },
+  {
+    "wikidata_id": "Q17957",
+    "name": "Lonely Planet",
+    "description": "publisher of guidebooks and other media related to travel",
+    "wikidata_url": "http://www.wikidata.org/entity/Q17957"
+  },
+  {
+    "wikidata_id": "Q25907",
+    "name": "Memorex",
+    "description": "consumer electronics brand",
+    "wikidata_url": "http://www.wikidata.org/entity/Q25907"
+  },
+  {
+    "wikidata_id": "Q26966",
+    "name": "Mercedes-AMG",
+    "description": "subsidiary and sub-brand of Mercedes-Benz AG",
+    "wikidata_url": "http://www.wikidata.org/entity/Q26966"
+  },
+  {
+    "wikidata_id": "Q27530",
+    "name": "Mercedes-Benz Group",
+    "description": "German automotive manufacturer",
+    "wikidata_url": "http://www.wikidata.org/entity/Q27530"
+  },
+  {
+    "wikidata_id": "Q1902",
+    "name": "Mercedes-Benz Mobility Services",
+    "description": "German company",
+    "wikidata_url": "http://www.wikidata.org/entity/Q1902"
+  },
+  {
+    "wikidata_id": "Q2283",
+    "name": "Microsoft",
+    "description": "American multinational technology corporation",
+    "wikidata_url": "http://www.wikidata.org/entity/Q2283"
+  },
+  {
+    "wikidata_id": "Q118142",
+    "name": "Museum of Contemporary Art, Chicago",
+    "description": "art museum in Chicago, Illinois, USA",
+    "wikidata_url": "http://www.wikidata.org/entity/Q118142"
+  },
+  {
+    "wikidata_id": "Q49133",
+    "name": "Museum of Fine Arts Boston",
+    "description": "art museum in Boston, Massachusetts, United States",
+    "wikidata_url": "http://www.wikidata.org/entity/Q49133"
+  },
+  {
+    "wikidata_id": "Q46487",
+    "name": "Museums in Sogn and Fjordane",
+    "description": "association of museums in the Sogn and Fjordane county, Norway",
+    "wikidata_url": "http://www.wikidata.org/entity/Q46487"
+  },
+  {
+    "wikidata_id": "Q25657",
+    "name": "MÁVAG",
+    "description": "Hungarian rail vehicle manufacturer",
+    "wikidata_url": "http://www.wikidata.org/entity/Q25657"
+  },
+  {
+    "wikidata_id": "Q13683",
+    "name": "NYSE Euronext Liffe",
+    "description": "former securities market",
+    "wikidata_url": "http://www.wikidata.org/entity/Q13683"
+  },
+  {
+    "wikidata_id": "Q28699",
+    "name": "National Union for the Total Independence of Angola",
+    "description": "political party in Angola",
+    "wikidata_url": "http://www.wikidata.org/entity/Q28699"
+  },
+  {
+    "wikidata_id": "Q4800",
+    "name": "New Democratic Power – FORCA",
+    "description": "Albanian minority political party in Montenegro",
+    "wikidata_url": "http://www.wikidata.org/entity/Q4800"
+  },
+  {
+    "wikidata_id": "Q27474",
+    "name": "New Directions Publishing",
+    "description": "independent book publishing company",
+    "wikidata_url": "http://www.wikidata.org/entity/Q27474"
+  },
+  {
+    "wikidata_id": "Q28982",
+    "name": "New Flemish Alliance",
+    "description": "Belgian political party",
+    "wikidata_url": "http://www.wikidata.org/entity/Q28982"
+  },
+  {
+    "wikidata_id": "Q8093",
+    "name": "Nintendo",
+    "description": "Japanese multinational video game and consumer electronics company",
+    "wikidata_url": "http://www.wikidata.org/entity/Q8093"
+  },
+  {
+    "wikidata_id": "Q26694",
+    "name": "Outokumpu",
+    "description": "group of international companies headquartered in Helsinki, Finland",
+    "wikidata_url": "http://www.wikidata.org/entity/Q26694"
+  },
+  {
+    "wikidata_id": "Q8681",
+    "name": "Pan Am",
+    "description": "1927–1991 airline in the United States, former primary international carrier",
+    "wikidata_url": "http://www.wikidata.org/entity/Q8681"
+  },
+  {
+    "wikidata_id": "Q11289",
+    "name": "Panavision",
+    "description": "American motion picture equipment company",
+    "wikidata_url": "http://www.wikidata.org/entity/Q11289"
+  },
+  {
+    "wikidata_id": "Q4266",
+    "name": "Party of Regions",
+    "description": "Russophone political party of Ukraine",
+    "wikidata_url": "http://www.wikidata.org/entity/Q4266"
+  },
+  {
+    "wikidata_id": "Q28551",
+    "name": "People's Movement for the Liberation of Angola",
+    "description": "political party in Angola",
+    "wikidata_url": "http://www.wikidata.org/entity/Q28551"
+  },
+  {
+    "wikidata_id": "Q31314",
+    "name": "People's Progress Party",
+    "description": "political party in Vanuatu",
+    "wikidata_url": "http://www.wikidata.org/entity/Q31314"
+  },
+  {
+    "wikidata_id": "Q114071",
+    "name": "Perkins School for the Blind",
+    "description": "blind school in Massachusetts",
+    "wikidata_url": "http://www.wikidata.org/entity/Q114071"
+  },
+  {
+    "wikidata_id": "Q5291",
+    "name": "Pirate Party",
+    "description": "political party in France",
+    "wikidata_url": "http://www.wikidata.org/entity/Q5291"
+  },
+  {
+    "wikidata_id": "Q49670",
+    "name": "Progressive Citizens' Party",
+    "description": "political party in the principality of Liechtenstein",
+    "wikidata_url": "http://www.wikidata.org/entity/Q49670"
+  },
+  {
+    "wikidata_id": "Q19683",
+    "name": "Puerto Rican Independence Party",
+    "description": "political party of Puerto Rico",
+    "wikidata_url": "http://www.wikidata.org/entity/Q19683"
+  },
+  {
+    "wikidata_id": "Q145590",
+    "name": "Pure Earth",
+    "description": "environmental organization",
+    "wikidata_url": "http://www.wikidata.org/entity/Q145590"
+  },
+  {
+    "wikidata_id": "Q25785",
+    "name": "Red–Green Alliance",
+    "description": "left-wing Danish political party",
+    "wikidata_url": "http://www.wikidata.org/entity/Q25785"
+  },
+  {
+    "wikidata_id": "Q106394",
+    "name": "SC Freiburg",
+    "description": "German football club",
+    "wikidata_url": "http://www.wikidata.org/entity/Q106394"
+  },
+  {
+    "wikidata_id": "Q35665",
+    "name": "SETI@home",
+    "description": "BOINC based volunteer computing project searching for signs of extraterrestrial intelligence",
+    "wikidata_url": "http://www.wikidata.org/entity/Q35665"
+  },
+  {
+    "wikidata_id": "Q20718",
+    "name": "Samsung Electronics",
+    "description": "South Korean multinational electronics corporation",
+    "wikidata_url": "http://www.wikidata.org/entity/Q20718"
+  },
+  {
+    "wikidata_id": "Q27389",
+    "name": "Sandinista National Liberation Front",
+    "description": "Nicaraguan socialist political party",
+    "wikidata_url": "http://www.wikidata.org/entity/Q27389"
+  },
+  {
+    "wikidata_id": "Q15797",
+    "name": "Schlesischer Bankverein",
+    "description": "former banking company",
+    "wikidata_url": "http://www.wikidata.org/entity/Q15797"
+  },
+  {
+    "wikidata_id": "Q33126",
+    "name": "Sennacieca Asocio Tutmonda",
+    "description": "independent Esperanto association",
+    "wikidata_url": "http://www.wikidata.org/entity/Q33126"
+  },
+  {
+    "wikidata_id": "Q131626",
+    "name": "Smithsonian Institution",
+    "description": "group of museums and research centers administered by the United States government",
+    "wikidata_url": "http://www.wikidata.org/entity/Q131626"
+  },
+  {
+    "wikidata_id": "Q4362",
+    "name": "Social Democratic Party of Lithuania",
+    "description": "social democratic political party in Lithuania",
+    "wikidata_url": "http://www.wikidata.org/entity/Q4362"
+  },
+  {
+    "wikidata_id": "Q49750",
+    "name": "Socialist Unity Party of Germany",
+    "description": "communist political party and ruling state party of the GDR",
+    "wikidata_url": "http://www.wikidata.org/entity/Q49750"
+  },
+  {
+    "wikidata_id": "Q51768",
+    "name": "Society of Women Engineers",
+    "description": "American non-profit",
+    "wikidata_url": "http://www.wikidata.org/entity/Q51768"
+  },
+  {
+    "wikidata_id": "Q12221",
+    "name": "Starobrno Brewery",
+    "description": "Czech brewery",
+    "wikidata_url": "http://www.wikidata.org/entity/Q12221"
+  },
+  {
+    "wikidata_id": "Q131603",
+    "name": "TSV 1860 München",
+    "description": "German association football club based in Munich",
+    "wikidata_url": "http://www.wikidata.org/entity/Q131603"
+  },
+  {
+    "wikidata_id": "Q47720",
+    "name": "The People of Freedom",
+    "description": "Italian centre-right political party",
+    "wikidata_url": "http://www.wikidata.org/entity/Q47720"
+  },
+  {
+    "wikidata_id": "Q7414",
+    "name": "The Walt Disney Company",
+    "description": "American multinational mass media company",
+    "wikidata_url": "http://www.wikidata.org/entity/Q7414"
+  },
+  {
+    "wikidata_id": "Q26070",
+    "name": "UNIQLO",
+    "description": "Japanese casual wear designer, manufacturer and retailer",
+    "wikidata_url": "http://www.wikidata.org/entity/Q26070"
+  },
+  {
+    "wikidata_id": "Q35572",
+    "name": "Union of European Football Associations",
+    "description": "international governing body for association football in Europe",
+    "wikidata_url": "http://www.wikidata.org/entity/Q35572"
+  },
+  {
+    "wikidata_id": "Q47781",
+    "name": "Union of the Centre",
+    "description": "Italian political party",
+    "wikidata_url": "http://www.wikidata.org/entity/Q47781"
+  },
+  {
+    "wikidata_id": "Q12565",
+    "name": "Universal Esperanto Association",
+    "description": "international organization of Esperanto speakers",
+    "wikidata_url": "http://www.wikidata.org/entity/Q12565"
+  },
+  {
+    "wikidata_id": "Q20584",
+    "name": "Verein Jordsand",
+    "description": "conservation organization",
+    "wikidata_url": "http://www.wikidata.org/entity/Q20584"
+  },
+  {
+    "wikidata_id": "Q43078",
+    "name": "War'l Leur",
+    "description": "cultural organization in Brittany, France",
+    "wikidata_url": "http://www.wikidata.org/entity/Q43078"
+  },
+  {
+    "wikidata_id": "Q15330",
+    "name": "Waymo",
+    "description": "autonomous car technology company by alphabet inc.",
+    "wikidata_url": "http://www.wikidata.org/entity/Q15330"
+  },
+  {
+    "wikidata_id": "Q115928",
+    "name": "Western European Nuclear Regulators' Association",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q115928"
+  },
+  {
+    "wikidata_id": "Q42183",
+    "name": "Whig Party",
+    "description": "19th-century United States political party",
+    "wikidata_url": "http://www.wikidata.org/entity/Q42183"
+  },
+  {
+    "wikidata_id": "Q8288",
+    "name": "Wikimedia Deutschland",
+    "description": "Wikimedia chapter in Germany",
+    "wikidata_url": "http://www.wikidata.org/entity/Q8288"
+  },
+  {
+    "wikidata_id": "Q180",
+    "name": "Wikimedia Foundation",
+    "description": "American charitable organization",
+    "wikidata_url": "http://www.wikidata.org/entity/Q180"
+  },
+  {
+    "wikidata_id": "Q49623",
+    "name": "Workers’ Party of Korea",
+    "description": "sole ruling party of North Korea",
+    "wikidata_url": "http://www.wikidata.org/entity/Q49623"
+  },
+  {
+    "wikidata_id": "Q49621",
+    "name": "Workers’ Party of South Korea",
+    "description": "1946–1949 political party in South Korea",
+    "wikidata_url": "http://www.wikidata.org/entity/Q49621"
+  },
+  {
+    "wikidata_id": "Q129842",
+    "name": "World Association of Newspapers",
+    "description": "former organization founded in 1948, before merging with IFRA as WAN-IFRA",
+    "wikidata_url": "http://www.wikidata.org/entity/Q129842"
+  },
+  {
+    "wikidata_id": "Q33489",
+    "name": "World Esperanto Youth Organization",
+    "description": "Esperanto organization for young Esperanto speakers",
+    "wikidata_url": "http://www.wikidata.org/entity/Q33489"
+  },
+  {
+    "wikidata_id": "Q15332",
+    "name": "Yabloko",
+    "description": "Russian political party",
+    "wikidata_url": "http://www.wikidata.org/entity/Q15332"
+  },
+  {
+    "wikidata_id": "Q136228",
+    "name": "ZIS Stiftung für Studienreisen",
+    "description": "",
+    "wikidata_url": "http://www.wikidata.org/entity/Q136228"
+  },
+  {
+    "wikidata_id": "Q119787",
+    "name": "distributed.net",
+    "description": "nonprofit organization",
+    "wikidata_url": "http://www.wikidata.org/entity/Q119787"
+  }
+]
