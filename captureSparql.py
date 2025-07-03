@@ -1,5 +1,5 @@
 import requests
-import RAGModelHenrique.llmbasedbackend as askai
+import RAGModel.llmbasedbackend as askai
 from fastapi import FastAPI
 import json
 import re

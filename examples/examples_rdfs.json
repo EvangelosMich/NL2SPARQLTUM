@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What is the capital of Germany?",
+    "reasoning_style": "Chain of Thought",
+    "thought": "I need to find the entity with rdfs:label 'Germany', then get its capital using property P36.",
+    "sparql": "SELECT ?capital ?capitalLabel WHERE {\n  ?country rdfs:label \"Germany\"@en.\n  ?country wdt:P36 ?capital.\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". }\n}"
+  },
+  {
+    "question": "Who are the children of Benjamin Franklin?",
+    "reasoning_style": "Chain of Thought",
+    "thought": "I need to find the person with label 'Benjamin Franklin' using rdfs:label, then retrieve their children using P40.",
+    "sparql": "SELECT ?child ?childLabel WHERE {\n  ?person rdfs:label \"Benjamin Franklin\"@en.\n  ?person wdt:P40 ?child.\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". }\n}"
+  },
+  {
+    "question": "Which companies are owned by Elon Musk?",
+    "reasoning_style": "Chain of Thought",
+    "thought": "I need to locate the person 'Elon Musk' using rdfs:label, then find companies where he is listed as the owner via property P127.",
+    "sparql": "SELECT ?company ?companyLabel WHERE {\n  ?person rdfs:label \"Elon Musk\"@en.\n  ?company wdt:P127 ?person.\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". }\n}"
+  },
+  {
+    "question": "Which books were written by George Orwell?",
+    "reasoning_style": "Chain of Thought",
+    "thought": "I need to find the author 'George Orwell' using rdfs:label, then locate items where he is the author (P50) and the item is a book (P31 = Q571).",
+    "sparql": "SELECT ?book ?bookLabel WHERE {\n  ?author rdfs:label \"George Orwell\"@en.\n  ?book wdt:P50 ?author;\n        wdt:P31 wd:Q571.\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". }\n}"
+  },
+  {
+    "question": "What are the universities located in Munich?",
+    "reasoning_style": "Chain of Thought",
+    "thought": "I need to find the city 'Munich' using rdfs:label, then find items that are instances of university (Q3918) and located in that city using P131.",
+    "sparql": "SELECT ?university ?universityLabel WHERE {\n  ?city rdfs:label \"Munich\"@en.\n  ?university wdt:P131 ?city;\n               wdt:P31 wd:Q3918.\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". }\n}"
+  }
+]

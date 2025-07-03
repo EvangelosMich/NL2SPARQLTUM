@@ -1,22 +1,21 @@
 import requests
-import openai
+from openai import OpenAI
+
+client = OpenAI(api_key=(
+    "sk-proj-kCLczx7_1zyWErWOqCnavSTcYpjt5bhizlzjey4qTcJlk3Mljr-"
+    "zBwmpbR0kwqbMZXr9ccS33ST3BlbkFJ7gril2RheKhSuhh3qBET0GKYb4kKwBEbqM85dl2"
+    "FtrmilTw0iChuI5B96BVxX25tvg3ZkIRREA"
+))
 import json
 import re
 
 # Configure OpenAI API
-openai.api_key = (
-    "sk-proj-kCLczx7_1zyWErWOqCnavSTcYpjt5bhizlzjey4qTcJlk3Mljr-"
-    "zBwmpbR0kwqbMZXr9ccS33ST3BlbkFJ7gril2RheKhSuhh3qBET0GKYb4kKwBEbqM85dl2"
-    "FtrmilTw0iChuI5B96BVxX25tvg3ZkIRREA"
-)
 
 
 def call_openai(prompt):
-    response = openai.ChatCompletion.create(
-        model="gpt-4o",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0
-    )
+    response = client.chat.completions.create(model="gpt-4o",
+    messages=[{"role": "user", "content": prompt}],
+    temperature=0)
     return response.choices[0].message.content.strip()
 
 
@@ -86,7 +85,7 @@ def query_search_api(terms):
         response = requests.post(url, headers=headers, data=payload)
         data = response.json()
         term_results[term] = data.get("organic", [])
-    
+
     return term_results
 
 
@@ -131,7 +130,7 @@ def get_wikidata_descriptions(qids, language='en'):
         label = entity.get("labels", {}).get(language, {}).get("value", "")
         description = entity.get("descriptions", {}).get(language, {}).get("value", "")
         result.append({"id": qid, "label": label, "description": description})
-    
+
     return result
 
 

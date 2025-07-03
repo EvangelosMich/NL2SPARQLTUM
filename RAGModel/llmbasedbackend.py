@@ -22,7 +22,6 @@ from .jsonfiles.retriever import retrieve_offline_ids
 # Optional CUDA settings for performance (currently forcing CPU usage)
 os.environ['CUDA_VISIBLE_DEVICES'] = ''
 os.environ['TORCH_USE_CUDA_DSA'] = '1'
-
 # ------------------------ Configuration and Model Loading ------------------------
 
 # Load API key from .env file
@@ -87,7 +86,7 @@ some product (album named Pictures for example)
 
 """
     model = genai.GenerativeModel(
-        model_name="gemini-2.0-flash",
+    model_name="gemini-2.5-pro",
         system_instruction=SYSTEM_PROMPT
     )
     response = model.generate_content(prompt, generation_config={"temperature": 0.2})
@@ -163,14 +162,14 @@ def get_llm_response(user_question, dialog_history):
     print(hints)
     print(f"The hints that I've gathered are {hints}")
 
-    if not found_entities:
-        return "__NO_ENTITY_FOUND__"
+    #if not found_entities:
+        #return "__NO_ENTITY_FOUND__"
 
     retrieved = retrieve_examples(user_question + " " + hints)
     final_prompt = build_prompt(user_question, retrieved, dialog_history, hints)
 
     model = genai.GenerativeModel(
-        model_name="gemini-2.0-flash",
+    model_name="gemini-2.5-pro",
         system_instruction=SYSTEM_PROMPT
     )
 
@@ -230,7 +229,7 @@ def get_llm_response_rdfs(user_question,dialog_history):
     prompt = build_prompt_rdfs(user_question, retrieved, dialog_history, hint_text)
 
     model = genai.GenerativeModel(
-        model_name="gemini-2.0-flash",
+    model_name="gemini-2.5-pro",
         system_instruction=SYSTEM_PROMPT
     )
 
