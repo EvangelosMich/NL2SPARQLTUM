@@ -187,11 +187,10 @@ def process_user_question(user_quest, use_rdfs=False):
     """, height=0)
     
     # Show retry button if no results and not already using RDFS
-    if len(df) == 0 and not use_rdfs:
-        st.session_state.show_retry_button = True
-        st.session_state.last_user_question = user_quest
-    else:
-        st.session_state.show_retry_button = False
+
+    st.session_state.show_retry_button = True
+    st.session_state.last_user_question = user_quest
+
 
 # -------- Main logic --------
 
@@ -210,8 +209,15 @@ if user_quest:
 
 # Show retry button after results are displayed (if needed)
 if st.session_state.show_retry_button:
-    st.warning("The previous query returned 0 results. Retry with the RDFS method?")
-    if st.button("🔄 Yes, retry"):
+    st.warning("Do you think the results we provided you with were false? Would you like to try again with our RDFS method?")
+    col1,col2,col3,col4,col5 = st.columns(5)
+    with col1:
+        pass
+    with col2:pass
+    with col4:pass
+    with col5:pass
+    with col3:
+     if st.button("🔄 Yes, retry"):
         st.session_state.retry_rdfs = True
-        st.session_state.show_retry_button = False
+        st.session_state.show_retry_button = True
         st.rerun()
