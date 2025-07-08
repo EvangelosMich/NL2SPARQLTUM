@@ -1,15 +1,14 @@
 import requests
-from openai import OpenAI
-
-client = OpenAI(api_key=(
-    "sk-proj-kCLczx7_1zyWErWOqCnavSTcYpjt5bhizlzjey4qTcJlk3Mljr-"
-    "zBwmpbR0kwqbMZXr9ccS33ST3BlbkFJ7gril2RheKhSuhh3qBET0GKYb4kKwBEbqM85dl2"
-    "FtrmilTw0iChuI5B96BVxX25tvg3ZkIRREA"
-))
+import openai
 import json
 import re
 
 # === CONFIGURATION ===
+openai.api_key = (
+    "sk-proj-kCLczx7_1zyWErWOqCnavSTcYpjt5bhizlzjey4qTcJlk3Mljr-"
+    "zBwmpbR0kwqbMZXr9ccS33ST3BlbkFJ7gril2RheKhSuhh3qBET0GKYb4kKwBEbqM85dl2"
+    "FtrmilTw0iChuI5B96BVxX25tvg3ZkIRREA"
+)
 SERPER_API_KEY = "b4b565c31a58bca9cb7e6201a23a007b3800a537"
 
 # === LLM CONVERSATION CONTEXT ===
@@ -24,9 +23,11 @@ def call_openai(prompt, role="user", reset=False):
             "content": "You are a helpful assistant that converts natural language into SPARQL queries for Wikidata. You extract concepts, map them to roles, and generate SPARQL queries step-by-step."
         })
     message_history.append({"role": role, "content": prompt})
-    response = client.chat.completions.create(model="gpt-4o",
-    messages=message_history,
-    temperature=0)
+    response = openai.ChatCompletion.create(
+        model="gpt-4o",
+        messages=message_history,
+        temperature=0
+    )
     reply = response.choices[0].message.content.strip()
     message_history.append({"role": "assistant", "content": reply})
     return reply
@@ -96,7 +97,7 @@ def query_search_api(terms):
         response = requests.post(url, headers=headers, data=payload)
         data = response.json()
         term_results[term] = data.get("organic", [])
-
+    
     return term_results
 
 
@@ -148,7 +149,7 @@ def get_wikidata_descriptions(qids, language='en'):
         label = entity.get("labels", {}).get(language, {}).get("value", "")
         description = entity.get("descriptions", {}).get(language, {}).get("value", "")
         result.append({"id": qid, "label": label, "description": description})
-
+    
     return result
 
 

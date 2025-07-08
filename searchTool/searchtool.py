@@ -5,7 +5,7 @@ import re
 from dotenv import load_dotenv
 import os
 
-load_dotenv("../")
+load_dotenv()
 
 # === CONFIGURATION ===
 openai.api_key = os.getenv("OPENAI_API_KEY")
