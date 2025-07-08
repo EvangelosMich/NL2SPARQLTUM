@@ -1,0 +1,182 @@
+type,hops,domain,question,tries search,precision search,recall search,F1 Score Search,Tries,Precision,Recall,F1 Score RAG,RDFs precision,RDFs Recall,RDFs F1 Score,Golden Standard/Our answers Rag/Search,Commentary
+easy,1,companies,Where is Image Engine headquartered?,1,1,1,1,1,1,1,1,,,,Vancouver/Vancouver/Vancouver,
+easy,1,public_figures,What is the occupation of Ahmad Heryawan?,1,1,1,1,1,1,1,1,,,,politician/politician/politician,
+easy,1,events,What happened in the event Portuguese invasion of the Banda Oriental (1811–12) ?,1,0,0,0,2,0,1,0,,,,,The event does not have a “country of Origin saved in Wikidata
+easy,1,companies,Where is Democratic Party headquartered?,1,1,1,1,1,1,1,1,,,,Washington DC/Washington DC/Washington DC,
+easy,1,movies,Who directed the movie Percy?,1,1,1,1,1,1,1,1,,,,Ralph Tomas/ Ralph Tomas/Ralph Tomas,It got 2 IDs as hints and chose the second one had to manuall instruct it to use the other one
+easy,1,public_figures,What is the occupation of Woody Allen?,1,1,1,1,1,1,1,1,,,,"screenwriter/screenwriter/screenwriter  actor/actor/actor  
+writer/writer/writer  
+composer/composer/composer  
+clarinetist/clarinetist/clarinetist  
+singer/singer/singer  
+playwright/playwright/playwright  
+comedian/comedian/comedian  
+character actor/character actor/character actor  
+film score composer/film score composer/film score composer  
+journalist/journalist/journalist  
+film director/film director/film director  
+film producer/film producer/film producer  
+director/director/director  
+film actor/film actor/film actor  
+producer/producer/producer  
+film screenwriter/film screenwriter/film screenwriter",Multiple occupations were found none of the false however couldn’t identify though between things like actor and film actor
+easy,1,countries,What is the capital of Kazakhstan?,1,1,1,1,1,1,1,1,,,,Astana/Astana/Astana,
+easy,1,movies,Who directed the movie Bloodbath at the House of Death?,1,1,1,1,1,1,1,1,,,,Ray Cameron/Ray Cameron/Ray Cameron,
+easy,1,countries,What is the capital of Timor-Leste?,1,1,1,1,1,1,1,1,,,,Dili/Dili/Dili,
+easy,1,public_figures,What is the occupation of Rupert Wyatt?,1,1,1,1,1,1,1,1,,,,"screenwriter, cinematographer, film director, film producer, film screenwriter /screenwriter, cinematographer, film director, film producer, film screenwriter/screenwriter, cinematographer, film director, film producer, film screenwriter ",
+easy,1,events,In which country did the event Puya Mei Thaba happen?,,,,,,,,,,,,,Skipped for now location was only in the description
+easy,1,companies,Where is MÁVAG headquartered?,1,1,1,1,2,1,1,1,,,,Budapest/Budapest/Budapest; Budapest district VII,Had to use rdfs:label I believe the problem lies with the foreign word
+easy,1,countries,What is the capital of Ecuador?,1,1,1,1,1,1,1,1,,,,Quito/Quito/Quito,
+easy,1,countries,What is the capital of The Gambia?,1,1,1,1,1,1,1,1,,,,Banjul/Banjul/Banjul,
+easy,1,public_figures,What is the occupation of Bruce Springsteen?,1,1,1,1,1,1,1,1,,,,"composer, singer, record producer, pianist, songwriter, guitarist, film director, television actor, film actor, recording artist /composer, singer, record producer, pianist, songwriter, guitarist, film director, television actor, film actor, recording artist/composer, singer, record producer, pianist, songwriter, guitarist, film director, television actor, film actor, recording artist ",
+easy,1,companies,Where is International Student Identity Card headquartered?,1,1,1,1,1,1,1,1,,,,Amsterdam/Amsterdam/Amsterdam,
+easy,1,companies,Where is Atmosphere Visual Effects headquartered?,1,1,1,1,1,1,1,1,,,,Vancouver/Vancouver/Vancouver,
+easy,1,public_figures,What is the occupation of Lech Kaczyński?,1,1,1,1,1,1,1,1,,,,"lawyer, politician, dissident, jurist, lecturer, university teacher, film actor, trade unionist, legal scholar/politician/lawyer, politician, dissident, jurist, lecturer, university teacher, film actor, trade unionist, legal scholar
+",
+easy,1,events,What is the short name for Big Bang nucleosynthesis,1,1,1,1,1,1,1,1,,,,BBN/BBN/BBN,
+easy,1,companies,Where is Workers’ Party of Korea headquartered?,1,1,1,1,1,1,1,1,,,,Kim Il-sung Square/                         /Kim Il-sung Square,
+easy,1,events,What is the capital of United Kingdom?,1,1,1,1,1,1,1,1,,,,London/London/London,
+easy,1,countries,What is the capital of Uganda?,1,1,1,1,1,1,1,1,,,,Kampala/Kampala/Kampala,
+easy,1,public_figures,Show me 10 songs by Miley Cyrus ,1,1,1,1,1,1,1,1,,,,"Who Owns My Heart, Can't Be Tamed, I Miss You, 7 Things, I Thought I Lost You, 4x4, FU, Dooo It!, Lighter (Miley Cyrus song), Malibu/Who Owns My Heart, Can't Be Tamed, I Miss You, 7 Things, I Thought I Lost You, 4x4, FU, Dooo It!, Lighter (Miley Cyrus song), Malibu/ Younger Now, Nothing Breaks Like a Heart, On a Roll, Q115166497, Party in the U.S.A., I Miss You, I Thought I Lost You, Send It On, Gonna Get This, Breakout
+",
+easy,1,countries,What is the capital of Bangladesh?,1,1,1,1,1,1,1,1,,,,Dhaka/Dhaka/Dhaka,
+easy,1,movies,Who directed the movie Das Boot?,1,1,1,1,1,1,1,1,,,,Wolfgang Petersen/Wolfgang Petersen/Wolfgang Petersen,
+easy,1,companies,Who is the chairman of the 1. FSV Mainz 05?,1,1,1,1,1,1,1,1,,,,"Stefan Hoffman, Harald Strutz/Stefan Hofmann/Stefan Hofmann",Would only show the current one and not all of them
+easy,1,movies,Who directed the movie Stash House?,1,1,1,1,4,1,1,1,,,,Eduardo Rodriguez/Eduardo Rodriguez/Eduardo Rodriguez,Even though the id was in the database was dedicated in using rdfs:label I don’t know why/ Search method gave the correct name
+easy,1,movies,Who directed the movie The Twilight Saga: Breaking Dawn – Part 1?,1,1,1,1,1,1,1,1,,,,Q361336/Q361336/Bill Condon ,
+easy,1,events,How many people died at the April 2010 Kohat bombings,4,0,0,0,1,1,1,1,,,,58/58/0,Was very inventive got many QIDs didn’t know which one was correct so used union
+easy,1,public_figures,How many children did Willoughby Newton have?,1,1,1,1,2,1,1,1,,,,1/  1/ 1,Had to specifically tell him to use count otherwise it used some weird property
+easy,2,public_figures,What are films directed by Hans Steinhoff?,1,1,1,1,1,1,1,1,,,,"Rembrandt, Der alte und der junge König, Hitlerjunge Quex, Ohm Krüger, Robert Koch, The Vulture Wally, Scampolo, Tanz auf dem Vulkan, Shiva und die Galgenblume, Everybody Wins/Rembrandt, Der alte und der junge König, Hitlerjunge Quex, Ohm Krüger, Robert Koch, The Vulture Wally, Scampolo, Tanz auf dem Vulkan, Shiva und die Galgenblume, Everybody Wins (Found 53 of them not all of them were written for simplicity)/ Found 51 of them",
+easy,1,companies,Who was Gyldendal founded by?,1,1,1,1,1,1,1,1,,,,Søren Gyldendal  /Søren Gyldendal /Søren Gyldendal  ,
+easy,1,movies,Who was the screenwriter for the movie A Fantastic Fear of Everything  ?,1,1,1,1,1,1,1,1,,,,Crispian Mills/  /Crispian Mills  ,
+easy,1,movies,Who directed the movie Ghost?,1,1,1,1,1,1,1,1,,,,Jerry Zucker/Jerry Zucker/Jerry Zucker,
+easy,2,countries,What is the life expectancy of people in Switzerland?,3,0,0,0,1,1,1,1,,,,83.8 years/83.8 years/0,
+,,,,,,,"0,9117647059",,,,"0,9705882353",,,,,
+intermediate,2,movies,What are the review scores for the movie Heading South?,1,1,1,1,1,1,1,1,,,,"(""70%"", ""Rotten Tomatoes""), (""73/100"", ""Metacritic""), (""6.7/10"", ""Rotten Tomatoes"") /(""70%"", ""Rotten Tomatoes""), (""73/100"", ""Metacritic""), (""6.7/10"", ""Rotten Tomatoes"") /(""70%"", ""Rotten Tomatoes""), (""73/100"", ""Metacritic""), (""6.7/10"", ""Rotten Tomatoes"") ",Although the numbers were correct as well as the syntax the labels were misinformed
+intermediate,2,public_figures,When was Pertinax born?,1,1,1,1,1,1,1,1,,,,0126-07-31T00:00:00Z /0126-07-31T00:00:00Z/0126-07-31T00:00:00Z  ,
+intermediate,2,companies,What are the political ideologies of the Pirate Party?,2,1,1,1,1,1,1,1,,,,"freedom of information, privacy, e-democracy, environmentalism/freedom of information, privacy, e-democracy, environmentalism ","i had to say to give all of them and there were some not useful outputs like ""republican party"". Dont know how to score it (20 wrong outputs of 50)"
+intermediate,2,movies,Who composed the soundtrack for the movie The Madwoman of Chaillot?,1,1,1,1,1,1,1,1,,,,"Michael J. Lewis/Michael J. Lewis/Michael J. Lewis    
+",
+intermediate,2,countries,What is the official language of the capital of Senegal?,1,1,1,1,1,1,1,1,,,,"French,Wolof/French,Wolof/French,Wolof",
+intermediate,2,public_figures,What is the place that Sandra Nettelbeck was born? (country)  ,1,1,1,1,2,1,"0,5","0,6666666667",,,,Germany/Germany/Germany,The first time the LLM used the P17 property id which is supposed to not be used for Humans resulting in bad results
+intermediate,2,companies,"What is the birthplace of the architect for the ""Museum of Contemprorary Art, Chicago""?
+",4,0,0,0,1,1,1,1,,,,Josef Paul Kleihues  Rheine/Josef Paul Kleihues  Rheine/empty,
+intermediate,2,public_figures,In which country was John Hamilton born?,1,1,1,1,1,1,1,1,,,,"United Kingdom  /United Kingdom / UK, US, Canada","Again, a lot o extra outputs, dont know how to evaluate"
+intermediate,2,movies,Who composed the soundtrack for the movie Eraserhead?,,,,,,,,,,,,,
+intermediate,2,countries,"Who is the ""leader"" of lithuania (president/prime minister/king etc)",4,"0,45","0,01","0,01956521739",1,1,1,1,,,,Gitanas Nausėda/Gitanas Nausėda/see commentary,"Gave me all liders of lithuania, not just the present onw"
+intermediate,2,public_figures,In which country was Senkichi Taniguchi born?,1,1,1,1,1,1,1,1,,,,Japan/Japan/Japan,Managed to also combine P19 with P17
+intermediate,2,movies,Who composed the soundtrack for the movie Rear Window?,1,1,1,1,1,1,1,1,,,,Franz Waxman/Franz Waxman/Franz Waxman,
+intermediate,2,movies,What other movies did the director of Hurlevent direct?,1,1,1,1,1,1,1,1,,,,"36 Views from the Pic Saint-Loup, Gang of Four, Le Pont du Nord, Love on the Ground, Noroît, etc/36 Views from the Pic Saint-Loup, Gang of Four, Le Pont du Nord, Love on the Ground, Noroît, etc  (30 results) / 28 results",
+intermediate,2,public_figures,In which country was John Shea born?,3,1,1,1,1,1,1,1,,,,United States/United States/United States,
+intermediate,2,events,"Show me pictures from the event of ""Blessing ceremony of the Unification Church""  ",2,1,1,1,2,1,1,1,,,,,Had to remind him that his id was wrong and then it fixed itself
+intermediate,2,countries,What languages do they speak in the capital of Niger?,4,0,0,0,1,1,"0,75","0,8571428571",,,,"Hausa, Tuareg, Fula, Tahoua, Zarma, Gourmanchéma /Hausa, Tuareg, Fula, Tahoua, Zarma, Gourmanchéma                 / see commentary",only correct when i ommited the word capital
+intermediate,2,companies,Who founded the company Belarusians Will!?,,,,,,,,,,,,,
+intermediate,2,public_figures,What are the nationalities of John Cleese spouses,1,1,1,1,1,1,1,1,,,,US US US US/US US US/ US US US,Syntax was correct however one didn’t have nationality in their wikipedia page so nothing came up
+intermediate,2,movies,Who composed the soundtrack for the movie School Ties?,1,1,1,1,1,1,1,1,,,,Maurice Jarre/Maurice Jarre/Maurice Jarre,
+intermediate,2,companies,Who founded the company Museum of Fine Arts Boston?,1,1,1,1,1,1,1,1,,,,"Charles Callahan Perkins,Martin Brimmer/  Charles Callahan Perkins,Martin Brimmer/  Charles Callahan Perkins,Martin Brimmer
+",
+intermediate,2,companies,When was LPGA founded(inception)?,1,1,1,1,3,1,1,1,,,,1950/1950/1950-01-01,Had some trouble with the definition of founded
+intermediate,2,events,In what point in time did the event Åbo Bloodbath take place?,1,1,1,1,1,1,1,1,,,,1599/1599/1599-11-20,
+intermediate,2,companies,Which country is the headquarters of Free List located in?  ,1,1,1,1,1,1,1,1,,,,Liechtenstein/Liechtenstein/Liechtenstein,
+intermediate,2,countries,Which continent is the capital of Colombia located on?  ,4,0,0,0,1,1,1,1,,,,South America/South America/empty,
+intermediate,2,movies,Who composed the soundtrack for the movie Inception?,1,1,1,1,1,1,1,1,,,,Hans Zimmer/Hans Zimmer/Hans Zimmer,Managed to do it with direct query since the composer was linked directly to the film
+intermediate,2,public_figures,"What does the signature of Narendra Modi look like?
+",1,1,1,1,"1
+",1,1,1,,,,http://commons.wikimedia.org/wiki/Special:FilePath/Signature%20of%20Narendra%20Modi%20%28Hindi%29.svg  /  http://commons.wikimedia.org/wiki/Special:FilePath/Signature%20of%20Narendra%20Modi%20%28Hindi%29.svg  / http://commons.wikimedia.org/wiki/Special:FilePath/Signature%20of%20Narendra%20Modi%20%28Hindi%29.svg ,
+intermediate,2,events,"Who participated in the event of ""drift of self-propelled barge T-36""?  ",2,1,1,1,2,0,"0,5",0,,,,"ziganshin, askhat | Filipp Poplavsky | Anatoly Kryunchkvsky | Ivan Fedotov  /    /  ziganshin, askhat | Filipp Poplavsky | Anatoly Kryunchkvsky | Ivan Fedotov",In one try it managed to find the id for the event and in the other the id for participant but none of the times both at the same time
+intermediate,2,events,When did the event 2012 European Open Water Championships take place?,1,1,1,1,1,0,0,0,,,,2012/ / 2012 (see the commentary),"if it was where instead of when, mine also got correct and the answer is Piombino"
+intermediate,2,countries,What are the most spoken languages in Bangladesh by percentage of the population,4,0,0,0,2,0,0,0,,,,,I think that was a bit too advanced
+intermediate,2,events,When did the event 1982 Harpoon Missile Misfire Incident take place?,2,0,0,0,1,0,0,0,,,,,
+intermediate,2,public_figures,In which country was Rajiv Gandhi born?,1,1,1,1,1,1,1,1,,,,India/India/India,
+intermediate,2,events,When did the event 2008 Bihar flood take place?,1,1,1,1,1,0,0,0,,,,,Change question
+intermediate,2,countries,What is the official language of the country whose capital is related to Yemen?,1,1,1,1,1,1,1,1,,,,Arabic|Sabaean/ / Arabic|Sabaean,
+intermediate,2,events,"When did the event Murders of White, Goodman, and Schrader take place?(point in time)  ",1,1,1,1,1,1,1,1,,,,1964-06-21T00:00:00Z  /1964-06-21T00:00:00Z /1964-06-21T00:00:00Z  ,
+intermediate,2,movies,Who composed the soundtrack for the movie Lettere di una novizia?,1,1,1,1,1,1,1,1,,,,Roberto Nicolosi / /Roberto Nicolosi,
+intermediate,2,countries,What is the official language of the country whose capital is related to Eritrea?,1,"0,5",1,"0,6666666667",1,"0,5",1,"0,6666666667",,,,Arabic | Tigrinya / / Arabic | Tigrinya | English | Italian,
+intermediate,2,companies,In which countries are the airline hubs of “Pan Am” located?,2,0,0,0,1,1,1,1,,,,hubLabel  countryLabel  0  John F. Kennedy International Airport  United States  1  London Heathrow Airport  United Kingdom  2  Narita International Airport  Japan  3  Frankfurt Airport  Germany  4  Miami International Airport  United States  5  Tokyo International Airport  Japan /hubLabel  countryLabel  0  John F. Kennedy International Airport  United States  1  London Heathrow Airport  United Kingdom  2  Narita International Airport  Japan  3  Frankfurt Airport  Germany  4  Miami International Airport  United States  5  Tokyo International Airport  Japan,
+intermediate,2,countries,What is the official language of the country whose capital is related to Switzerland?,1,1,1,1,1,1,1,1,,,,"French, German, Swiss High German /  /  French, German, Swiss High German, Swiss French",
+intermediate,2,companies,Where are the headquarters of the sponsors for Wikimedia Foundation located?  ,3,0,0,0,1,"0,875","0,875","0,875",,,,"Vancouver, Cupertino, Redmond, Veldhoven, New York City/Googleplex, Cupertino, Redmond, Veldhoven, New York City,
+224 West 57th Street, Menlo Park, Ford Foundation Building,
+Natick, Athens, City of Brussels, Palo Alto, Redwood City,
+Hong Kong, Miami, Paris, Houston, SoHo, New York City,
+Milwaukee, London, San Francisco
+224 West 57th Street, Menlo Park, Ford Foundation Building,
+Natick, Athens, City of Brussels, Palo Alto, Redwood City,
+Hong Kong, Miami, Paris, Houston, SoHo, New York City,
+Milwaukee, New York City, London, San Francisco, New York City
+
+",
+,,,,,,,"0,7753035644",,,,"0,8396074646",,,,,
+hard,3,movies,Who directed and starred in the movie V for Vendetta?,1,1,1,1,1,1,1,1,,,,a lot of results lol,
+hard,3,movies,Who is the composer of the movie that follows Star Wars: Episode VII – The Force Awakens?  ,1,1,1,1,1,0,0,0,,,,John Willians/Kevin Kiner/John Willians,
+hard,3,countries,Which continent does the country whose capital is Dushanbe belong to?,1,1,1,1,1,1,1,1,,,,Asia/   /Asia,
+hard,3,public_figures,"Which political party is Erich Honecker affiliated with, and where were they born?(Where was he born)",1,1,1,1,2,1,1,1,,,,"Neukirchen,Socialist Unity Party of Germany,Communist Party of Germany/Neukirchen,Socialist Unity Party of Germany,Communist Party of Germany/Neukirchen,Socialist Unity Party of Germany,Communist Party of Germany",
+hard,3,companies,Who is the CEO of the company that owns Outokumpu?,,,,,,,,,,,,,
+hard,3,events,Who was the author of the source that described the March Field event?,,,,,,,,,,,,,
+hard,3,movies,Who directed and starred in the movie Paris Belongs to Us?,1,1,1,1,1,1,1,1,,,,"Jacques Rivette,Jean-Luc Godard, Claude Chabrol, Jean-Claude Brialy, Françoise Prévost, Jacques Demy, François Maistre, Jean Martin, André Thorent, Betty Schneider, Daniel Crohem, Giani Esposito, Henri Poirier, Jean-Marie Robain, Jean-Pierre Delage, Louison Roblin, Malka Ribowska, Noëlle Leiris, Paul Bisciglia /Jacques Rivette,Jean-Luc Godard, Claude Chabrol, Jean-Claude Brialy, Françoise Prévost, Jacques Demy, François Maistre, Jean Martin, André Thorent, Betty Schneider, Daniel Crohem, Giani Esposito, Henri Poirier, Jean-Marie Robain, Jean-Pierre Delage, Louison Roblin, Malka Ribowska, Noëlle Leiris, Paul Bisciglia/Jacques Rivette,Jean-Luc Godard, Claude Chabrol, Jean-Claude Brialy, Françoise Prévost, Jacques Demy, François Maistre, Jean Martin, André Thorent, Betty Schneider, Daniel Crohem, Giani Esposito, Henri Poirier, Jean-Marie Robain, Jean-Pierre Delage, Louison Roblin, Malka Ribowska, Noëlle Leiris, Paul Bisciglia                 ",
+hard,3,events,What triggered the event known as Black Sea mutiny and what was the location?,3,0,0,0,1,1,1,1,,,,Sevastopool/Sevastopool /empty,The label was repeated in some languages
+hard,3,movies,Who directed and starred in the movie The Hunt?,1,1,1,1,1,1,1,1,,,,Thomas Vinteberg/Thomas Vinteberg/Thomas Vinteberg,The only person who both directed AND played in the movie
+hard,3,events,What triggered the event known as 2011 Abuja United Nations bombing and what was the location?,,,,,,,,,,,,,
+hard,3,public_figures,"Which political party is Frank Lloyd affiliated with, and where were they born?",3,1,"0,5","0,6666666667",1,1,1,1,,,,Glasgow/Glasgow/,He was not in any political party the LLM correctly used the optional keyword
+hard,3,companies, Show me the companies that own the Industrial and Commercial Bank of China and optionally their CEOs  ,2,0,0,0,1,1,1,1,,,,"Ministry of Finance of the People's Republic of China,Central Huijin Investment  /Ministry of Finance of the People's Republic of China,Central Huijin Investment  / ",There were no direct CEOs for any of those companies
+hard,3,events,What triggered the event known as Ghulja Incident and what was the location?,,,,,,,,,,,,,
+hard,3,public_figures,"Which political party is Ramón Barros Luco affiliated with, and where were they born?",1,1,1,1,1,1,1,1,,,,"Liberal Party  ,Santiago  / Liberal Party  ,Santiago  / Liberal Party  ,Santiago ",
+hard,3,Public figures,What was the occupation of the father of musician Prince?,1,1,1,1,1,1,1,1,,,,"Songwriter,Jazz musician/songwriter ,Jazz musician/songwriter ,Jazz musician",
+hard,3,movies,What is the native language of the country where Nintendo is headquartered?,1,1,1,1,1,1,1,1,,,,Japanese/Japanese/Japanese,
+hard,3,countries,Which continent does the country whose capital is Brasilia belong to?,1,1,1,1,2,1,1,1,,,,South America/South America (Had to specify to use the hints Didnt do it for some reason)/South America,"The question was wrong, the capital of Brazil is Brasilia"
+hard,3,events,What triggered the event known as 1968 Democratic National Convention protest activity and what was the location?,,,,0,,,,,,,,,
+hard,3,movies,"What is the nationality of the author who wrote the book in which the film ""Rough Night in Jericho"" is based on?  ",1,1,1,1,1,1,1,1,,,,United States/United States/United States,
+hard,3,public_figures,"Which political party is Pedro I of Brazil affiliated with, and where were they born?",3,0,0,0,1,0,0,0,,,,Pedro I of Brazil/Pedro I of Brazil (worked with RDFS though because it was putting as QID the QID for Brazil)/My model can not find affiliation with parties well,
+hard,3,public_figures,Show me the spouses of the directors of 3 movies that Bruce Willis was a cast member of  ,1,1,"0,66","0,7951807229",1,1,"0,66","0,7951807229",,,,"Kate Beckinsale,Karina Longworth,.../match (the 3rd one was missing probably because of the 3 random movies that were limited one director was unwed or the information on wikidata was missing)/My third was missing as well",
+hard,3,companies,"In which country is the birthplace of the chairperson of ""Future and Freedom""?  ",1,1,1,1,1,1,1,1,,,,Italy/Italy/Italy,
+hard,3,companies,"What noble title did the father of the founder of the ""Smithsonian Institution"" have?  ",1,1,1,1,1,1,1,1,,,,"Duke of Northumberland  ,Earl of Beverley  ,Baron Lovaine  /Duke of Northumberland  ,Earl of Beverley  ,Baron Lovaine /Duke of Northumberland  ,Earl of Beverley  ,Baron Lovaine   ",
+hard,3,events,"What is the population of 1 of the ethnic groups of the country that the ""Odi Massacre"" happened in?  ",1,1,1,1,1,1,1,1,,,,"Hausa people,  40000000/Hausa people,  40000000/Hausa people,  40000000",
+hard,3,companies,"What occupation did the siblings of the founder of the political party ""The people of Freedom"" have?  ",1,1,1,1,1,1,1,1,,,,"{Paulo Berlusconi entepreneur,journalist,sports executive},{Maria Antonietta Berlusconi,Ballet Dancer}/ matched / matched as well",
+hard,3,countries,Which continent does the country whose capital is Luanda belong to?,1,1,1,1,1,1,1,1,,,,Africa/ see commentary /Africa ,"Question was wrong, angola is a country not a capital"
+hard,3,public_figures,"Which political party is Tiberius affiliated with, and where were they born?",,,,,,,,,,,,,
+hard,3,countries,Which continent does the country whose capital is Dili belong to?,1,1,1,1,1,1,1,1,,,,Asia/ /Asia,"Question was wrong, Timor-Leste is a country not a capital"
+hard,3,companies,Who is the CEO of the company that Boeing is being owned by?,1,1,1,1,1,1,1,1,,,,"Larry Fink,Bill Stromberg  /Larry Fink,Bill Stromberg  ","I think boeing is not owned by other company, or am i wrong?"
+hard,3,countries,Which continent does the country whose capital is Port Lousi belong to?,1,1,1,1,1,1,1,1,,,,Africa/ /Africa,"Question was wrong, Mauritius is a country not a capital"
+,,,,,,,"0,8184738956",,,,"0,9081325301",,,,,
+unseen,1,fictional,Who is Tony Stark’s spouse?,1,1,1,1,2,1,1,1,,,,"Pepper Pots/Pepper Pots (First try was with the rdfs label Iron Man which the LLM did not understand was a pseudonym,Had to clarify to search for Tony Stark)/Pepper Ports",
+unseen,2,fictional,What is the native language of Krypton?,5,0,0,0,2,0,0,0,1,1,,Kryptonian/     /Did not find the QId for Krypton ,
+unseen,3,fictional,Who ruled Asgard before Odin?,3,0,0,0,1,0,0,0,0,0,,Bor/   /empty,
+unseen,1,fictional,What is the currency used in Middle Earth?,,,,0,,,,0,,,,,
+unseen,3,fictional,What weapon did Frodo inherit from Bilbo?,,,,0,,,,0,,,,,
+unseen,2,fictional,Which university did Sherlock Holmes attend?,,,,0,,,,0,,,,,
+unseen,2,fictional,Which planet is Darth Vader from?,4,0,0,0,1,1,1,1,,,,Tatooine//empty (see commentary),"i couldnt make the llm search for ""home world"" it continued to search for planet or place of death for some reason/ The rag model managed to correctly hallucinate the ID for Darth Vader but after wards as property it put: ""from narrative universe"" Not sure how to assess this"
+unseen,1,fictional,What is the capital of Wakanda?,1,1,1,1,1,0,0,0,1,1,,Birnin Zana/   /Birnin Zana,
+unseen,2,fictional,What is the birth place of Jon Snow?,2,1,1,1,1,0,0,0,0.5,1,,Tower of Joy//Tower of Joy (see commentary),had to specify the llm to search for got character and not the jornalist
+unseen,1,fictional,What did Tony Stark die from?  ,3,1,1,1,1,0,0,0,1,1,,death in battle//death in battle (see commentary),i had to specifie to search for manner of death instead of cause of death
+New unseen questions,,,,,,,0,,,,,,,,,
+,1,,What is the occupation of Theresa May?,1,1,1,1,2,1,1,1,1,1,1,Politician/Politician/Politican,
+,1,,Who directed Sleepless in Seeatle,1,1,1,1,2,1,1,1,1,1,1,Nora Ephron\Nora Ephron/Nora Ephron,Managed to correctly hallucinate the IMDB Id which is kinda impressive.
+,1,,Where did the 2012 Summer Olympics happen?,1,1,1,1,1,1,1,1,1,1,1,London//London,
+,1,,Who founded Apple,1,1,1,1,1,1,1,1,0,0,0,Steve Jobs Ronald Wayne Steve Wozniak/ Steve Jobs Ronald Wayne Steve Wozniak/ Steve Jobs Ronald Wayne Steve Wozniak,The rdfs:label added Apple Inc. to avoid confusion and returned empy results
+,1,,"Who performs the song ""Back in Black""",1,1,1,1,1,0,0,0,1,1,1,ACDC//ACDC,
+,1,,"What is the duration of the movie ""Titanic""",1,1,1,1,1,1,1,1,"0,33",1,"0,33",195//195,
+,1,,What is the short name for the animal chimpanzee,1,1,1,1,1,0,0,0,1,1,1,P. troglodytes/P.troglodytes/P.troglodytes,
+,,,,1,1,1,1,,,,"0,7142857143",,,"0,7614285714",,
+,2,,How many children does Donald Trump have?,1,1,1,1,1,1,1,1,1,1,1,5//5,
+,2,,Who is the spouse of the founder of Alibaba group?,3,0,0,0,1,0,0,0,1,1,1,"Zhang Ying,Clara Wu Tsai /Zhang Ying,Clara Wu Tsai (with rdfs label)/empty",
+,2,,What is the continent of the country that the Eiffel Tower is located,1,1,1,1,1,1,1,1,"0,5",1,"0,5","Europe/ Europe,North America(North America was with the rdfs:label)/Europe",It probably searched for the one in Las Vegas
+,2,,What is the occupation of Emmanuel Macrons wife?,1,1,1,1,1,1,1,1,1,1,1,Secondary School Teacher//secondary school teacher,
+,2,,"Where was the author of the book ""1984"" born",1,1,1,1,1,1,1,1,1,1,1,Motihari/Motihari/Motihari,
+,2,,What is the continent of the country that the American Revolution happened?,1,1,1,1,1,0,0,0,1,1,1,North America/North America (RDFS used wrong ID hallucination)/North America,
+,2,,Which university did the founder of SpaceX attend?,1,1,1,1,1,0,0,0,0,0,0,"Stanford University, University of Pennsylvania, University of Pretoria, The Wharton School, Queen's University, Pretoria Boys High School, Waterkloof House Preparatory School, Bryanston High School, Smith School of Business//Stanford University, University of Pennsylvania, University of Pretoria, The Wharton School, Queen's University, Pretoria Boys High School, Waterkloof House Preparatory School, Bryanston High School, Smith School of Business",
+,,,,1,1,1,"0,8571428571",,,,"0,5714285714",,,"0,7857142857",,
+,3,,What is the occupation of the spouse of Arnold Schwarzenegger?,1,1,1,1,1,1,1,1,1,1,1,"actor,writer,lawyer,news presebter,journalist,children's writer, women's rights activist/actor,writer,lawyer,news presebter,journalist,children's writer, women's rights activist/actor,writer,lawyer,news presebter,journalist,children's writer, women's rights activist",
+,3,,"What is the occupation of a member of the band that performs the song ""Take On Me""?
+
+",4,0,0,0,1,0,0,0,1,1,1,"producer,pianist,musician,songwriter,guitarist,postage stamp designer/rdfs delivered them all rag model hallucinated results/empty",
+,3,,Get the place of birth of the leader of a country that participated in World War I,3,0,0,0,1,1,1,1,1,1,1,Anthony Albanese Darlinghurst/Anthony Albanese Darlingshurt/empty,
+,3,,"Where was the author of the book that the movie The Shawshank Redemption is based on born?
+
+",1,1,1,1,1,1,1,1,1,1,1,"Stephen King,Portland/Stephen King Portland had to specify to the LLM to NOT use rdfs/Portland",
+,3,,"What university did the author of The Lord of the Rings attend?
+
+",2,1,1,1,1,0,0,0,0,0,0,University of Oxford//University of Oxford,Managed to correctly guess the QID false syntax
+,3,,"Who are the creators of the children of Thanos from the Marvel comics?
+
+",5,0,0,0,1,0,0,0,"0,75",1,"0,75","Roger Stern John Buschemma (Nebula) Jim Starlin (Gamora)/James Gunn,Jim Starlin (Gamora) Roger Stern John Buschemma (Nebula)/empty",
+,,,,,,,"0,5",,,,"0,5",,,"0,7916666667",,
