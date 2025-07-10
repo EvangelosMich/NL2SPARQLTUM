@@ -9,21 +9,21 @@ Developed by **Evangelos Michalopoulos** and **Henrique Leonel** as part of the 
 ## 🔍 Key Features
 
 - 🔁 **Two SPARQL Generation Backends**:
-  - **Search Tool** (online): Extracts keywords, resolves QIDs using Serper + Wikidata APIs, and generates SPARQL via GPT-4o.
-  - **RAG Model** (offline): Retrieves entities and properties using FAISS, adds few-shot Chain-of-Thought examples, and generates queries via Gemini Pro 2.5.
+  - 🧭 **Search Tool (online)**: Extracts keywords, resolves QIDs using Serper + Wikidata APIs, and generates SPARQL via GPT-4o.
+  - 🧠 **RAG Model (offline)**: Uses FAISS to retrieve relevant entities and properties, adds few-shot Chain-of-Thought examples, and generates queries via Gemini Pro 2.5.
 
 - 🧠 **LLM Reasoning Strategies**:
-  - Chain-of-Thought & Self-Ask prompting styles.
-  - SPARQL-only output with reasoning explanation included.
+  - Chain-of-Thought and Self-Ask prompting styles.
+  - Structured responses with both reasoning and final SPARQL output.
 
 - 💬 **Interactive Frontend**:
-  - Built with Streamlit.
-  - Displays conversation history, answers, tables, and response time.
-  - Retry button for using `rdfs:label` fallback in case of errors or hallucinations.
+  - Built with **Streamlit**.
+  - Displays conversation history, answers, results, and response time.
+  - Retry button enables `rdfs:label` fallback for unmatched entities.
 
-- 🛡️ **Fallback Mechanism**:
-  - `rdfs:label`-based querying if QID lookup fails.
-  - Prevents hallucination of invalid IDs for unseen or rare entities.
+- 🛡️ **Robust Fallback Mechanism**:
+  - Automatically falls back to `rdfs:label`-based querying when entity QIDs cannot be reliably resolved.
+  - Reduces hallucination of non-existent or incorrect entity IDs.
 
 ---
 
@@ -32,18 +32,21 @@ Developed by **Evangelos Michalopoulos** and **Henrique Leonel** as part of the 
 ```bash
 .
 ├── FrontEnd.py                # Streamlit app entry point
-├── captureSparql.py           # Cleans and runs SPARQL queries
+├── captureSparql.py           # Cleans and executes SPARQL queries
 ├── searchTool/
 │   └── searchtool.py          # Online search + query generator using GPT and Serper
 ├── RAGModel/
-│   ├── llmbasedbackend.py     # Offline RAG implementation using Gemini and FAISS
-│   ├── prompt_template.py     # Prompt structure for Gemini
-│   └── jsonfiles/             # Offline FAISS index, entity/property databases
-├── examples/                  # Few-shot SPARQL examples for Chain-of-Thought prompting
+│   ├── llmbasedbackend.py     # Offline RAG pipeline using Gemini + FAISS
+│   ├── prompt_template.py     # Prompt templates for structured query generation
+│   └── jsonfiles/             # Local FAISS index, entity & property DBs
+├── examples/                  # Few-shot SPARQL examples for prompting
 │   ├── examples.json
 │   └── examples_rdfs.json
-├── .env                       # API keys for OpenAI, Gemini, Serper
+├── .env                       # API key config for OpenAI, Gemini, Serper
+├── requirements.txt           # Python dependencies
+├── setup.sh                   # Virtual environment + dependency installer
 └── README.md
+
 
 
 
@@ -54,11 +57,11 @@ Developed by **Evangelos Michalopoulos** and **Henrique Leonel** as part of the 
 git clone https://github.com/EvangelosMich/NL2SPARQLTUM.git
 cd NL2SPARQLTUM
 
-2
-Install dependencies:
+2. Set up the environment
+chmod +x setup.sh
+./setup.sh
 
 
-pip install -r requirements.txt
 
 
 
@@ -72,7 +75,7 @@ SERPER_API_KEY=your_serper_key
 4
 Run the Streamlit app:
 
-
+source .venv/bin/activate
 streamlit run FrontEnd.py
 
 
