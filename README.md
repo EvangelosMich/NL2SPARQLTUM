@@ -76,7 +76,7 @@ SERPER_API_KEY=your_serper_key
 
 Run the Streamlit app:
 
-source .venv/bin/activate
+source .venv/bin/activate #this step can probably be skipped but if the next command doesnt work run it from the venv
 streamlit run FrontEnd.py
 
 
