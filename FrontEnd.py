@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 import pandas as pd
 import RAGModel.llmbasedbackend as lm
 import json
@@ -157,7 +158,7 @@ def process_user_question(user_quest, use_rdfs=False):
     })
     
     # Auto scroll
-    st.components.v1.html("""
+    components.html("""
     <script>
         function scrollToBottom() {
             let container = parent.document.querySelector('section.main');
