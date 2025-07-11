@@ -72,7 +72,8 @@ GEMINI_API_KEY=your_gemini_key
 SERPER_API_KEY=your_serper_key
 
 
-4
+4 # Run from Git Bash or WSL or Linux of course
+
 Run the Streamlit app:
 
 source .venv/bin/activate
