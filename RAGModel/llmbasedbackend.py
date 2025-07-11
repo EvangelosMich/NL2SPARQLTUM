@@ -9,13 +9,10 @@ import os
 from dotenv import load_dotenv
 import json
 import pandas as pd
-import requests
 import numpy as np
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import re
-import spacy
-from spacy.matcher import PhraseMatcher
 from difflib import get_close_matches
 from .jsonfiles.retriever import retrieve_offline_ids
 
